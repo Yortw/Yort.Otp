@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Yort.Otp</id>
+    <version>1.0.0.3</version>
+    <title>Yort.Otp</title>
+    <authors>Yortw</authors>
+    <owners>Troy Willmot</owners>
+    <licenseUrl>https://github.com/Yortw/Yort.Otp/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Yortw/Yort.Otp/</projectUrl>
+    <iconUrl>https://github.com/Yortw/Yort.Otp/blob/master/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A portable .Net library for onetime password generation.</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>totp hotp otp onetime password net40 winrt uwp uap ios android windowsphone rfc6238 rfc4226</tags>
+  </metadata>
+	<files>
+		<file src="src\Yort.Otp.Android\bin\Release\Yort*.dll" target="lib\monoandroid" />
+		<file src="src\Yort.Otp.Android\bin\Release\Yort*.xml" exclude="**\*.codeanalysislog.xml" target="lib\monoandroid" />
+		<file src="src\Yort.Otp.Android\bin\Release\Yort*.pdb" target="lib\monoandroid" />
+		<file src="src\Yort.Otp.iOS\bin\iPhone\Release\Yort*.dll" target="lib\Xamarin.iOS10" />
+		<file src="src\Yort.Otp.iOS\bin\iPhone\Release\Yort*.xml" exclude="**\*.codeanalysislog.xml" target="lib\Xamarin.iOS10" />
+		<file src="src\Yort.Otp.iOS\bin\iPhone\Release\Yort*.pdb" target="lib\Xamarin.iOS10" />
+		<file src="src\Yort.Otp.Net40\bin\Release\Yort*.dll" target="lib\net40" />
+		<file src="src\Yort.Otp.Net40\bin\Release\Yort*.xml" exclude="**\*.codeanalysislog.xml" target="lib\net40" />
+		<file src="src\Yort.Otp.Net40\bin\Release\Yort*.pdb" target="lib\net40" />
+		<file src="src\Yort.Otp.Portable\bin\Release\Yort*.dll" target="lib\portable-net45+win+wpa81+wp80" />
+		<file src="src\Yort.Otp.Portable\bin\Release\Yort*.xml" exclude="**\*.codeanalysislog.xml" target="lib\portable-net45+win+wpa81+wp80" />
+		<file src="src\Yort.Otp.Portable\bin\Release\Yort*.pdb" target="lib\portable-net45+win+wpa81+wp80" /> 
+		<file src="src\Yort.Otp.WPSL\Bin\Release\Yort*.dll" target="lib\wp81" />
+		<file src="src\Yort.Otp.WPSL\Bin\Release\Yort*.xml" exclude="**\*.codeanalysislog.xml" target="lib\wp81" />
+		<file src="src\Yort.Otp.WPSL\Bin\Release\Yort*.pdb" target="lib\wp81" />
+		<file src="src\Yort.Otp.WinRT\bin\Release\Yort*.dll" target="lib\netcore451" />
+		<file src="src\Yort.Otp.WinRT\bin\Release\Yort*.xml" exclude="**\*.codeanalysislog.xml" target="lib\netcore451" />
+		<file src="src\Yort.Otp.WinRT\bin\Release\Yort*.pdb" target="lib\netcore451" />
+		<file src="src\**\*.cs" exclude="**\obj\**\*.*" target="src" />
+	</files>
+</package>

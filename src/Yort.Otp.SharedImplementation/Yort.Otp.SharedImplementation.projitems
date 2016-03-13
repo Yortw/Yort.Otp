@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>6c21b91c-f723-4aa3-a7c7-298e67f06a2f</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Yort.Otp</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Base32.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CounterBasedPasswordGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Globals.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)OneTimePasswordAccount.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)OnetimePasswordGeneratorBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)OnetimePasswordGeneratorFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)OnetimePasswordSecret.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TimeBasedPasswordGenerator.cs" />
+  </ItemGroup>
+</Project>
