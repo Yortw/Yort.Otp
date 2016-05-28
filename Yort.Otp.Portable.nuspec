@@ -8,7 +8,7 @@
     <owners>Troy Willmot</owners>
     <licenseUrl>https://github.com/Yortw/Yort.Otp/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/Yortw/Yort.Otp/</projectUrl>
-    <iconUrl>https://github.com/Yortw/Yort.Otp/blob/master/icon.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/Yortw/Yort.Otp/master/icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A portable .Net library for onetime password generation.</description>
     <releaseNotes>Initial release.</releaseNotes>
