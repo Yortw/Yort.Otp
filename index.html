@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Yort.otp by Yortw</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Yort.otp</h1>
+        <h2>A portable .Net class library for creating onetime passwords (based on rfc4226 - https://tools.ietf.org/html/rfc4226 and rfc6238 - https://tools.ietf.org/html/rfc6238)</h2>
+        <a href="https://github.com/Yortw/Yort.Otp" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="yortotp" class="anchor" href="#yortotp" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Yort.Otp</h1>
+
+<p>A portable .Net class library for creating onetime passwords (based on [<a href="https://tools.ietf.org/html/rfc4226">rfc4226</a>] and [<a href="https://tools.ietf.org/html/rfc6238">rfc6238</a>]).
+These are the sorts of authentication codes used by Google/Microsoft/Facebook/Amazon etc. for second factor authentication.</p>
+
+<p><a href="https://github.com/Yortw/Yort.Otp/blob/master/LICENSE.md"><img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="GitHub license"></a> </p>
+
+<h2>
+<a id="supported-platforms" class="anchor" href="#supported-platforms" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Supported Platforms</h2>
+
+<p>Currently;</p>
+
+<ul>
+<li>.Net Framework 4.0</li>
+<li>Windows Phone Silverlight (8.1+) </li>
+<li>Xamarin.iOS</li>
+<li>Xamarin.Android </li>
+<li>WinRT (Windows Store Apps 8.1)</li>
+<li>UWP 10+ (Windows 10 Universal Programs)</li>
+</ul>
+
+<h2>
+<a id="build-status" class="anchor" href="#build-status" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Build Status</h2>
+
+<p><a href="https://ci.appveyor.com/project/Yortw/yort-otp"><img src="https://ci.appveyor.com/api/projects/status/e8116lsaf7oeb74d?svg=true" alt="Build status"></a></p>
+
+<h2>
+<a id="available-on-nuget" class="anchor" href="#available-on-nuget" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Available on Nuget</h2>
+
+<div class="highlight highlight-source-powershell"><pre>    PM<span class="pl-k">&gt;</span> <span class="pl-c1">Install-Package</span> Yort.Otp</pre></div>
+
+<p><a href="https://www.nuget.org/packages/Yort.Otp/"><img src="https://buildstats.info/nuget/Yort.Otp" alt="NuGet Badge"></a></p>
+
+<h2>
+<a id="samples" class="anchor" href="#samples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Samples</h2>
+
+<p>If you're implementing this on a server you should really read and understand the RFC specifications (linked above). There are sever specific issues around managing out of sync counters or client/server times that need to be understood.</p>
+
+<p>Here are some quick start samples;</p>
+
+<div class="highlight highlight-source-cs"><pre><span class="pl-k">public</span> <span class="pl-k">void</span> Main(<span class="pl-k">string</span>[] args)
+{
+    <span class="pl-c">// Generate a "time based" password from the current time (retrieved via DateTime.UtcNow), </span>
+    <span class="pl-c">// using the ASCII secret in the sample section of https://tools.ietf.org/html/rfc6238.</span>
+    <span class="pl-c">// This uses a default interval of 30 seconds (maximum length of time the password is value for).</span>
+    <span class="pl-k">using</span> (<span class="pl-k">var</span> passwordGenerator = <span class="pl-k">new</span> TimeBasedPasswordGenerator(<span class="pl-c1">false</span>, OnetimePasswordSecret.FromAscii(<span class="pl-s"><span class="pl-pds">"</span>12345678901234567890<span class="pl-pds">"</span></span>)))
+    {
+        System.Diagnostics.Debug.WriteLine($<span class="pl-s"><span class="pl-pds">"</span>Password: {passwordGenerator.GeneratedPassword} valid until {passwordGenerator.ValidUntilUtc.ToLocalTime()}<span class="pl-pds">"</span></span>);
+    }
+}</pre></div>
+
+<div class="highlight highlight-source-cs"><pre><span class="pl-k">public</span> <span class="pl-k">void</span> Main(<span class="pl-k">string</span>[] args)
+{
+    <span class="pl-c">// Generate a "counter based" one time password from a counter value of 10, </span>
+    <span class="pl-c">// using the ASCII secret in the sample section of https://tools.ietf.org/html/rfc6238</span>
+    <span class="pl-c">// The counter should be incremented on each *successful* login, and stored between sessions. See the RFC spec for details.</span>
+    <span class="pl-k">using</span> (<span class="pl-k">var</span> passwordGenerator = <span class="pl-k">new</span> CounterBasedPasswordGenerator(<span class="pl-c1">false</span>, OnetimePasswordSecret.FromAscii(<span class="pl-s"><span class="pl-pds">"</span>12345678901234567890<span class="pl-pds">"</span></span>)))
+    {
+        passwordGenerator.Counter = <span class="pl-c1">10</span>;
+        System.Diagnostics.Debug.WriteLine(<span class="pl-s"><span class="pl-pds">"</span>Password: <span class="pl-pds">"</span></span> + passwordGenerator.GeneratedPassword);
+    }
+}</pre></div>
+
+<p>If you're going to generate passwords for many different secrets but using an otherwise consistent configuration, factories can make that easier/more concise;</p>
+
+<div class="highlight highlight-source-cs"><pre><span class="pl-c">// Counter based factory sample</span>
+<span class="pl-c">//During startup, obtain and keep a reference to a factory</span>
+_OtpFactory = OnetimePasswordGeneratorFactory.CreateFactory(<span class="pl-c1">true</span>, <span class="pl-k">new</span> Sha512HashAlgorithm(), <span class="pl-c1">8</span>);
+
+<span class="pl-c">//When you want to generate a password...</span>
+<span class="pl-k">using</span> (<span class="pl-k">var</span> passwordGenerator = _OtpFactory.CreateNewPasswordGenerator(OnetimePasswordSecret.FromAscii(<span class="pl-s"><span class="pl-pds">"</span>12345678901234567890<span class="pl-pds">"</span></span>), <span class="pl-c1">10</span>))
+{
+    System.Diagnostics.Debug.WriteLine($<span class="pl-s"><span class="pl-pds">"</span>Password: {passwordGenerator.GeneratedPassword}<span class="pl-pds">"</span></span>);
+}
+
+<span class="pl-c">// Time based factory sample</span>
+<span class="pl-c">//During startup, obtain and keep a reference to a factory</span>
+_OtpFactory = OnetimePasswordGeneratorFactory.CreateFactory(<span class="pl-c1">true</span>, <span class="pl-k">new</span> Sha512HashAlgorithm(), <span class="pl-c1">8</span>, TimeSpan.FromMinutes(<span class="pl-c1">1</span>));
+
+<span class="pl-c">//When you want to generate a password...</span>
+<span class="pl-k">using</span> (<span class="pl-k">var</span> passwordGenerator = _OtpFactory.CreateNewPasswordGenerator(OnetimePasswordSecret.FromAscii(<span class="pl-s"><span class="pl-pds">"</span>12345678901234567890<span class="pl-pds">"</span></span>)))
+{
+    System.Diagnostics.Debug.WriteLine($<span class="pl-s"><span class="pl-pds">"</span>Password: {passwordGenerator.GeneratedPassword} valid until {passwordGenerator.ValidUntilUtc.ToLocalTime()}<span class="pl-pds">"</span></span>);
+}</pre></div>
+
+<p>This library <em>doesn't</em> generate QR codes, but it can generate the OTP uri to be turned into a QR code for configuring authenticator apps;</p>
+
+<div class="highlight highlight-source-cs"><pre><span class="pl-k">var</span> configureAuthenticatorUri = OnetimePasswordGeneratorFactory.GetOtpUrl(<span class="pl-s"><span class="pl-pds">"</span>account name or identifier<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>SHA1<span class="pl-pds">"</span></span>, <span class="pl-c1">8</span>, OnetimePasswordSecret.FromAscii(<span class="pl-s"><span class="pl-pds">"</span>12345678901234567890<span class="pl-pds">"</span></span>), TimeSpan.FromMinutes(<span class="pl-c1">1</span>));</pre></div>
+
+<p>Likewise, if given an OTP uri it can configure a password generator appropriately. This also returns the secret and account name, so they can be stored if required.</p>
+
+<div class="highlight highlight-source-cs"><pre><span class="pl-k">string</span> label = <span class="pl-c1">null</span>;
+<span class="pl-k">byte</span>[] secret = <span class="pl-c1">null</span>;
+<span class="pl-k">var</span> passwordGenerator = OnetimePasswordGeneratorFactory.FromOtpUrl(configureAuthenticatorUri, out label, out secret);</pre></div>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/Yortw/Yort.Otp/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/Yortw/Yort.Otp/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/Yortw/Yort.Otp"></a> is maintained by <a href="https://github.com/Yortw">Yortw</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
