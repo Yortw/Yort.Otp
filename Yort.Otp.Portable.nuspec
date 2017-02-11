@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Yort.Otp</id>
-    <version>1.0.0.4</version>
+    <version>1.0.5.0</version>
     <title>Yort.Otp</title>
     <authors>Yortw</authors>
     <owners>Troy Willmot</owners>
@@ -11,7 +11,7 @@
     <iconUrl>https://raw.githubusercontent.com/Yortw/Yort.Otp/master/icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A portable .Net library for onetime password generation.</description>
-    <releaseNotes>Initial release.</releaseNotes>
+    <releaseNotes>Now handles padding when decoding secrets from base32 strings.</releaseNotes>
     <copyright>Copyright 2016</copyright>
     <tags>totp hotp otp onetime password net40 winrt uwp uap ios android windowsphone rfc6238 rfc4226</tags>
   </metadata>
