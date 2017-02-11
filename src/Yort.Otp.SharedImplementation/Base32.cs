@@ -9,7 +9,7 @@ namespace Yort.Otp
 	/// <summary>
 	/// Class used for conversion between byte array and Base32 notation
 	/// </summary>
-	internal static  class Base32
+	internal static class Base32
 	{
 		/// <summary>
 		/// Size of the regular byte in bits
@@ -25,6 +25,8 @@ namespace Yort.Otp
 		/// Alphabet
 		/// </summary>
 		private const string Base32Alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567";
+
+		private static readonly char[] PaddingCharacters = new char[] { '=' };
 
 		/// <summary>
 		/// Convert byte array to Base32 format
@@ -139,6 +141,9 @@ namespace Yort.Otp
 
 			// Convert to upper-case
 			string base32StringUpperCase = base32String.Replace(" ", String.Empty).ToUpperInvariant();
+
+			//Remove padding characters from end of string, if any.
+			base32StringUpperCase = base32StringUpperCase.TrimEnd(PaddingCharacters);
 
 			// Prepare output byte array
 			byte[] outputBytes = new byte[base32StringUpperCase.Length * OutByteSize / InByteSize];

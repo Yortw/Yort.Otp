@@ -31,6 +31,15 @@ namespace Yort.Otp.Net40.Tests
 		}
 
 		[TestMethod]
+		public void OtpSecret_FromBase32_WithPadding_DecodesCorrectly()
+		{
+			var expected = new byte[] { 72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100, 33 };
+			var actual = OnetimePasswordSecret.FromBase32("JBSWY3DPEBLW64TMMQQQ====");
+
+			AssertSecretsAreEqual(expected, actual);
+		}
+
+		[TestMethod]
 		public void OtpSecret_FromAscii_DecodesCorrectly()
 		{
 			var expected = new byte[] { 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37, 0x38, 0x39, 0x30, 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37, 0x38, 0x39, 0x30 };
