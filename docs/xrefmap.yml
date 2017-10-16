@@ -1,0 +1,729 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Yort.Otp
+  name: Yort.Otp
+  href: api/Yort.Otp.html
+  commentId: N:Yort.Otp
+  fullName: Yort.Otp
+  nameWithType: Yort.Otp
+- uid: Yort.Otp.CounterBasedPasswordGenerator
+  name: CounterBasedPasswordGenerator
+  href: api/Yort.Otp.CounterBasedPasswordGenerator.html
+  commentId: T:Yort.Otp.CounterBasedPasswordGenerator
+  fullName: Yort.Otp.CounterBasedPasswordGenerator
+  nameWithType: CounterBasedPasswordGenerator
+- uid: Yort.Otp.CounterBasedPasswordGenerator.#ctor
+  name: CounterBasedPasswordGenerator()
+  href: api/Yort.Otp.CounterBasedPasswordGenerator.-ctor.html#Yort_Otp_CounterBasedPasswordGenerator__ctor
+  commentId: M:Yort.Otp.CounterBasedPasswordGenerator.#ctor
+  fullName: Yort.Otp.CounterBasedPasswordGenerator.CounterBasedPasswordGenerator()
+  nameWithType: CounterBasedPasswordGenerator.CounterBasedPasswordGenerator()
+- uid: Yort.Otp.CounterBasedPasswordGenerator.#ctor(System.Boolean)
+  name: CounterBasedPasswordGenerator(Boolean)
+  href: api/Yort.Otp.CounterBasedPasswordGenerator.-ctor.html#Yort_Otp_CounterBasedPasswordGenerator__ctor_System_Boolean_
+  commentId: M:Yort.Otp.CounterBasedPasswordGenerator.#ctor(System.Boolean)
+  fullName: Yort.Otp.CounterBasedPasswordGenerator.CounterBasedPasswordGenerator(System.Boolean)
+  nameWithType: CounterBasedPasswordGenerator.CounterBasedPasswordGenerator(Boolean)
+- uid: Yort.Otp.CounterBasedPasswordGenerator.#ctor(System.Boolean,System.Byte[])
+  name: CounterBasedPasswordGenerator(Boolean, Byte[])
+  href: api/Yort.Otp.CounterBasedPasswordGenerator.-ctor.html#Yort_Otp_CounterBasedPasswordGenerator__ctor_System_Boolean_System_Byte___
+  commentId: M:Yort.Otp.CounterBasedPasswordGenerator.#ctor(System.Boolean,System.Byte[])
+  name.vb: CounterBasedPasswordGenerator(Boolean, Byte())
+  fullName: Yort.Otp.CounterBasedPasswordGenerator.CounterBasedPasswordGenerator(System.Boolean, System.Byte[])
+  fullName.vb: Yort.Otp.CounterBasedPasswordGenerator.CounterBasedPasswordGenerator(System.Boolean, System.Byte())
+  nameWithType: CounterBasedPasswordGenerator.CounterBasedPasswordGenerator(Boolean, Byte[])
+  nameWithType.vb: CounterBasedPasswordGenerator.CounterBasedPasswordGenerator(Boolean, Byte())
+- uid: Yort.Otp.CounterBasedPasswordGenerator.#ctor*
+  name: CounterBasedPasswordGenerator
+  href: api/Yort.Otp.CounterBasedPasswordGenerator.-ctor.html
+  commentId: Overload:Yort.Otp.CounterBasedPasswordGenerator.#ctor
+  fullName: Yort.Otp.CounterBasedPasswordGenerator.CounterBasedPasswordGenerator
+  nameWithType: CounterBasedPasswordGenerator.CounterBasedPasswordGenerator
+- uid: Yort.Otp.CounterBasedPasswordGenerator.Counter
+  name: Counter
+  href: api/Yort.Otp.CounterBasedPasswordGenerator.Counter.html#Yort_Otp_CounterBasedPasswordGenerator_Counter
+  commentId: P:Yort.Otp.CounterBasedPasswordGenerator.Counter
+  fullName: Yort.Otp.CounterBasedPasswordGenerator.Counter
+  nameWithType: CounterBasedPasswordGenerator.Counter
+- uid: Yort.Otp.CounterBasedPasswordGenerator.Counter*
+  name: Counter
+  href: api/Yort.Otp.CounterBasedPasswordGenerator.Counter.html
+  commentId: Overload:Yort.Otp.CounterBasedPasswordGenerator.Counter
+  fullName: Yort.Otp.CounterBasedPasswordGenerator.Counter
+  nameWithType: CounterBasedPasswordGenerator.Counter
+- uid: Yort.Otp.IHashAlgorithm
+  name: IHashAlgorithm
+  href: api/Yort.Otp.IHashAlgorithm.html
+  commentId: T:Yort.Otp.IHashAlgorithm
+  fullName: Yort.Otp.IHashAlgorithm
+  nameWithType: IHashAlgorithm
+- uid: Yort.Otp.IHashAlgorithm.ComputeHash(System.Byte[],System.Byte[])
+  name: ComputeHash(Byte[], Byte[])
+  href: api/Yort.Otp.IHashAlgorithm.ComputeHash.html#Yort_Otp_IHashAlgorithm_ComputeHash_System_Byte___System_Byte___
+  commentId: M:Yort.Otp.IHashAlgorithm.ComputeHash(System.Byte[],System.Byte[])
+  name.vb: ComputeHash(Byte(), Byte())
+  fullName: Yort.Otp.IHashAlgorithm.ComputeHash(System.Byte[], System.Byte[])
+  fullName.vb: Yort.Otp.IHashAlgorithm.ComputeHash(System.Byte(), System.Byte())
+  nameWithType: IHashAlgorithm.ComputeHash(Byte[], Byte[])
+  nameWithType.vb: IHashAlgorithm.ComputeHash(Byte(), Byte())
+- uid: Yort.Otp.IHashAlgorithm.ComputeHash*
+  name: ComputeHash
+  href: api/Yort.Otp.IHashAlgorithm.ComputeHash.html
+  commentId: Overload:Yort.Otp.IHashAlgorithm.ComputeHash
+  fullName: Yort.Otp.IHashAlgorithm.ComputeHash
+  nameWithType: IHashAlgorithm.ComputeHash
+- uid: Yort.Otp.IHashAlgorithm.Name
+  name: Name
+  href: api/Yort.Otp.IHashAlgorithm.Name.html#Yort_Otp_IHashAlgorithm_Name
+  commentId: P:Yort.Otp.IHashAlgorithm.Name
+  fullName: Yort.Otp.IHashAlgorithm.Name
+  nameWithType: IHashAlgorithm.Name
+- uid: Yort.Otp.IHashAlgorithm.Name*
+  name: Name
+  href: api/Yort.Otp.IHashAlgorithm.Name.html
+  commentId: Overload:Yort.Otp.IHashAlgorithm.Name
+  fullName: Yort.Otp.IHashAlgorithm.Name
+  nameWithType: IHashAlgorithm.Name
+- uid: Yort.Otp.IOnetimePasswordGenerator
+  name: IOnetimePasswordGenerator
+  href: api/Yort.Otp.IOnetimePasswordGenerator.html
+  commentId: T:Yort.Otp.IOnetimePasswordGenerator
+  fullName: Yort.Otp.IOnetimePasswordGenerator
+  nameWithType: IOnetimePasswordGenerator
+- uid: Yort.Otp.IOnetimePasswordGenerator.GeneratedPassword
+  name: GeneratedPassword
+  href: api/Yort.Otp.IOnetimePasswordGenerator.GeneratedPassword.html#Yort_Otp_IOnetimePasswordGenerator_GeneratedPassword
+  commentId: P:Yort.Otp.IOnetimePasswordGenerator.GeneratedPassword
+  fullName: Yort.Otp.IOnetimePasswordGenerator.GeneratedPassword
+  nameWithType: IOnetimePasswordGenerator.GeneratedPassword
+- uid: Yort.Otp.IOnetimePasswordGenerator.GeneratedPassword*
+  name: GeneratedPassword
+  href: api/Yort.Otp.IOnetimePasswordGenerator.GeneratedPassword.html
+  commentId: Overload:Yort.Otp.IOnetimePasswordGenerator.GeneratedPassword
+  fullName: Yort.Otp.IOnetimePasswordGenerator.GeneratedPassword
+  nameWithType: IOnetimePasswordGenerator.GeneratedPassword
+- uid: Yort.Otp.IOnetimePasswordGenerator.HashAlgorithm
+  name: HashAlgorithm
+  href: api/Yort.Otp.IOnetimePasswordGenerator.HashAlgorithm.html#Yort_Otp_IOnetimePasswordGenerator_HashAlgorithm
+  commentId: P:Yort.Otp.IOnetimePasswordGenerator.HashAlgorithm
+  fullName: Yort.Otp.IOnetimePasswordGenerator.HashAlgorithm
+  nameWithType: IOnetimePasswordGenerator.HashAlgorithm
+- uid: Yort.Otp.IOnetimePasswordGenerator.HashAlgorithm*
+  name: HashAlgorithm
+  href: api/Yort.Otp.IOnetimePasswordGenerator.HashAlgorithm.html
+  commentId: Overload:Yort.Otp.IOnetimePasswordGenerator.HashAlgorithm
+  fullName: Yort.Otp.IOnetimePasswordGenerator.HashAlgorithm
+  nameWithType: IOnetimePasswordGenerator.HashAlgorithm
+- uid: Yort.Otp.IOnetimePasswordGenerator.PasswordLength
+  name: PasswordLength
+  href: api/Yort.Otp.IOnetimePasswordGenerator.PasswordLength.html#Yort_Otp_IOnetimePasswordGenerator_PasswordLength
+  commentId: P:Yort.Otp.IOnetimePasswordGenerator.PasswordLength
+  fullName: Yort.Otp.IOnetimePasswordGenerator.PasswordLength
+  nameWithType: IOnetimePasswordGenerator.PasswordLength
+- uid: Yort.Otp.IOnetimePasswordGenerator.PasswordLength*
+  name: PasswordLength
+  href: api/Yort.Otp.IOnetimePasswordGenerator.PasswordLength.html
+  commentId: Overload:Yort.Otp.IOnetimePasswordGenerator.PasswordLength
+  fullName: Yort.Otp.IOnetimePasswordGenerator.PasswordLength
+  nameWithType: IOnetimePasswordGenerator.PasswordLength
+- uid: Yort.Otp.IOnetimePasswordGenerator.SetSecret(System.Byte[])
+  name: SetSecret(Byte[])
+  href: api/Yort.Otp.IOnetimePasswordGenerator.SetSecret.html#Yort_Otp_IOnetimePasswordGenerator_SetSecret_System_Byte___
+  commentId: M:Yort.Otp.IOnetimePasswordGenerator.SetSecret(System.Byte[])
+  name.vb: SetSecret(Byte())
+  fullName: Yort.Otp.IOnetimePasswordGenerator.SetSecret(System.Byte[])
+  fullName.vb: Yort.Otp.IOnetimePasswordGenerator.SetSecret(System.Byte())
+  nameWithType: IOnetimePasswordGenerator.SetSecret(Byte[])
+  nameWithType.vb: IOnetimePasswordGenerator.SetSecret(Byte())
+- uid: Yort.Otp.IOnetimePasswordGenerator.SetSecret*
+  name: SetSecret
+  href: api/Yort.Otp.IOnetimePasswordGenerator.SetSecret.html
+  commentId: Overload:Yort.Otp.IOnetimePasswordGenerator.SetSecret
+  fullName: Yort.Otp.IOnetimePasswordGenerator.SetSecret
+  nameWithType: IOnetimePasswordGenerator.SetSecret
+- uid: Yort.Otp.MD5HashAlgorithm
+  name: MD5HashAlgorithm
+  href: api/Yort.Otp.MD5HashAlgorithm.html
+  commentId: T:Yort.Otp.MD5HashAlgorithm
+  fullName: Yort.Otp.MD5HashAlgorithm
+  nameWithType: MD5HashAlgorithm
+- uid: Yort.Otp.MD5HashAlgorithm.ComputeHash(System.Byte[],System.Byte[])
+  name: ComputeHash(Byte[], Byte[])
+  href: api/Yort.Otp.MD5HashAlgorithm.ComputeHash.html#Yort_Otp_MD5HashAlgorithm_ComputeHash_System_Byte___System_Byte___
+  commentId: M:Yort.Otp.MD5HashAlgorithm.ComputeHash(System.Byte[],System.Byte[])
+  name.vb: ComputeHash(Byte(), Byte())
+  fullName: Yort.Otp.MD5HashAlgorithm.ComputeHash(System.Byte[], System.Byte[])
+  fullName.vb: Yort.Otp.MD5HashAlgorithm.ComputeHash(System.Byte(), System.Byte())
+  nameWithType: MD5HashAlgorithm.ComputeHash(Byte[], Byte[])
+  nameWithType.vb: MD5HashAlgorithm.ComputeHash(Byte(), Byte())
+- uid: Yort.Otp.MD5HashAlgorithm.ComputeHash*
+  name: ComputeHash
+  href: api/Yort.Otp.MD5HashAlgorithm.ComputeHash.html
+  commentId: Overload:Yort.Otp.MD5HashAlgorithm.ComputeHash
+  fullName: Yort.Otp.MD5HashAlgorithm.ComputeHash
+  nameWithType: MD5HashAlgorithm.ComputeHash
+- uid: Yort.Otp.MD5HashAlgorithm.Name
+  name: Name
+  href: api/Yort.Otp.MD5HashAlgorithm.Name.html#Yort_Otp_MD5HashAlgorithm_Name
+  commentId: P:Yort.Otp.MD5HashAlgorithm.Name
+  fullName: Yort.Otp.MD5HashAlgorithm.Name
+  nameWithType: MD5HashAlgorithm.Name
+- uid: Yort.Otp.MD5HashAlgorithm.Name*
+  name: Name
+  href: api/Yort.Otp.MD5HashAlgorithm.Name.html
+  commentId: Overload:Yort.Otp.MD5HashAlgorithm.Name
+  fullName: Yort.Otp.MD5HashAlgorithm.Name
+  nameWithType: MD5HashAlgorithm.Name
+- uid: Yort.Otp.OnetimePasswordAccount
+  name: OnetimePasswordAccount
+  href: api/Yort.Otp.OnetimePasswordAccount.html
+  commentId: T:Yort.Otp.OnetimePasswordAccount
+  fullName: Yort.Otp.OnetimePasswordAccount
+  nameWithType: OnetimePasswordAccount
+- uid: Yort.Otp.OnetimePasswordAccount.Issuer
+  name: Issuer
+  href: api/Yort.Otp.OnetimePasswordAccount.Issuer.html#Yort_Otp_OnetimePasswordAccount_Issuer
+  commentId: P:Yort.Otp.OnetimePasswordAccount.Issuer
+  fullName: Yort.Otp.OnetimePasswordAccount.Issuer
+  nameWithType: OnetimePasswordAccount.Issuer
+- uid: Yort.Otp.OnetimePasswordAccount.Issuer*
+  name: Issuer
+  href: api/Yort.Otp.OnetimePasswordAccount.Issuer.html
+  commentId: Overload:Yort.Otp.OnetimePasswordAccount.Issuer
+  fullName: Yort.Otp.OnetimePasswordAccount.Issuer
+  nameWithType: OnetimePasswordAccount.Issuer
+- uid: Yort.Otp.OnetimePasswordAccount.Label
+  name: Label
+  href: api/Yort.Otp.OnetimePasswordAccount.Label.html#Yort_Otp_OnetimePasswordAccount_Label
+  commentId: P:Yort.Otp.OnetimePasswordAccount.Label
+  fullName: Yort.Otp.OnetimePasswordAccount.Label
+  nameWithType: OnetimePasswordAccount.Label
+- uid: Yort.Otp.OnetimePasswordAccount.Label*
+  name: Label
+  href: api/Yort.Otp.OnetimePasswordAccount.Label.html
+  commentId: Overload:Yort.Otp.OnetimePasswordAccount.Label
+  fullName: Yort.Otp.OnetimePasswordAccount.Label
+  nameWithType: OnetimePasswordAccount.Label
+- uid: Yort.Otp.OnetimePasswordAccount.Metadata
+  name: Metadata
+  href: api/Yort.Otp.OnetimePasswordAccount.Metadata.html#Yort_Otp_OnetimePasswordAccount_Metadata
+  commentId: P:Yort.Otp.OnetimePasswordAccount.Metadata
+  fullName: Yort.Otp.OnetimePasswordAccount.Metadata
+  nameWithType: OnetimePasswordAccount.Metadata
+- uid: Yort.Otp.OnetimePasswordAccount.Metadata*
+  name: Metadata
+  href: api/Yort.Otp.OnetimePasswordAccount.Metadata.html
+  commentId: Overload:Yort.Otp.OnetimePasswordAccount.Metadata
+  fullName: Yort.Otp.OnetimePasswordAccount.Metadata
+  nameWithType: OnetimePasswordAccount.Metadata
+- uid: Yort.Otp.OnetimePasswordAccount.PasswordGenerator
+  name: PasswordGenerator
+  href: api/Yort.Otp.OnetimePasswordAccount.PasswordGenerator.html#Yort_Otp_OnetimePasswordAccount_PasswordGenerator
+  commentId: P:Yort.Otp.OnetimePasswordAccount.PasswordGenerator
+  fullName: Yort.Otp.OnetimePasswordAccount.PasswordGenerator
+  nameWithType: OnetimePasswordAccount.PasswordGenerator
+- uid: Yort.Otp.OnetimePasswordAccount.PasswordGenerator*
+  name: PasswordGenerator
+  href: api/Yort.Otp.OnetimePasswordAccount.PasswordGenerator.html
+  commentId: Overload:Yort.Otp.OnetimePasswordAccount.PasswordGenerator
+  fullName: Yort.Otp.OnetimePasswordAccount.PasswordGenerator
+  nameWithType: OnetimePasswordAccount.PasswordGenerator
+- uid: Yort.Otp.OnetimePasswordAccount.Secret
+  name: Secret
+  href: api/Yort.Otp.OnetimePasswordAccount.Secret.html#Yort_Otp_OnetimePasswordAccount_Secret
+  commentId: P:Yort.Otp.OnetimePasswordAccount.Secret
+  fullName: Yort.Otp.OnetimePasswordAccount.Secret
+  nameWithType: OnetimePasswordAccount.Secret
+- uid: Yort.Otp.OnetimePasswordAccount.Secret*
+  name: Secret
+  href: api/Yort.Otp.OnetimePasswordAccount.Secret.html
+  commentId: Overload:Yort.Otp.OnetimePasswordAccount.Secret
+  fullName: Yort.Otp.OnetimePasswordAccount.Secret
+  nameWithType: OnetimePasswordAccount.Secret
+- uid: Yort.Otp.OnetimePasswordGeneratorBase
+  name: OnetimePasswordGeneratorBase
+  href: api/Yort.Otp.OnetimePasswordGeneratorBase.html
+  commentId: T:Yort.Otp.OnetimePasswordGeneratorBase
+  fullName: Yort.Otp.OnetimePasswordGeneratorBase
+  nameWithType: OnetimePasswordGeneratorBase
+- uid: Yort.Otp.OnetimePasswordGeneratorBase.#ctor
+  name: OnetimePasswordGeneratorBase()
+  href: api/Yort.Otp.OnetimePasswordGeneratorBase.-ctor.html#Yort_Otp_OnetimePasswordGeneratorBase__ctor
+  commentId: M:Yort.Otp.OnetimePasswordGeneratorBase.#ctor
+  fullName: Yort.Otp.OnetimePasswordGeneratorBase.OnetimePasswordGeneratorBase()
+  nameWithType: OnetimePasswordGeneratorBase.OnetimePasswordGeneratorBase()
+- uid: Yort.Otp.OnetimePasswordGeneratorBase.#ctor(System.Boolean)
+  name: OnetimePasswordGeneratorBase(Boolean)
+  href: api/Yort.Otp.OnetimePasswordGeneratorBase.-ctor.html#Yort_Otp_OnetimePasswordGeneratorBase__ctor_System_Boolean_
+  commentId: M:Yort.Otp.OnetimePasswordGeneratorBase.#ctor(System.Boolean)
+  fullName: Yort.Otp.OnetimePasswordGeneratorBase.OnetimePasswordGeneratorBase(System.Boolean)
+  nameWithType: OnetimePasswordGeneratorBase.OnetimePasswordGeneratorBase(Boolean)
+- uid: Yort.Otp.OnetimePasswordGeneratorBase.#ctor(System.Boolean,System.Byte[])
+  name: OnetimePasswordGeneratorBase(Boolean, Byte[])
+  href: api/Yort.Otp.OnetimePasswordGeneratorBase.-ctor.html#Yort_Otp_OnetimePasswordGeneratorBase__ctor_System_Boolean_System_Byte___
+  commentId: M:Yort.Otp.OnetimePasswordGeneratorBase.#ctor(System.Boolean,System.Byte[])
+  name.vb: OnetimePasswordGeneratorBase(Boolean, Byte())
+  fullName: Yort.Otp.OnetimePasswordGeneratorBase.OnetimePasswordGeneratorBase(System.Boolean, System.Byte[])
+  fullName.vb: Yort.Otp.OnetimePasswordGeneratorBase.OnetimePasswordGeneratorBase(System.Boolean, System.Byte())
+  nameWithType: OnetimePasswordGeneratorBase.OnetimePasswordGeneratorBase(Boolean, Byte[])
+  nameWithType.vb: OnetimePasswordGeneratorBase.OnetimePasswordGeneratorBase(Boolean, Byte())
+- uid: Yort.Otp.OnetimePasswordGeneratorBase.#ctor*
+  name: OnetimePasswordGeneratorBase
+  href: api/Yort.Otp.OnetimePasswordGeneratorBase.-ctor.html
+  commentId: Overload:Yort.Otp.OnetimePasswordGeneratorBase.#ctor
+  fullName: Yort.Otp.OnetimePasswordGeneratorBase.OnetimePasswordGeneratorBase
+  nameWithType: OnetimePasswordGeneratorBase.OnetimePasswordGeneratorBase
+- uid: Yort.Otp.OnetimePasswordGeneratorBase.Dispose
+  name: Dispose()
+  href: api/Yort.Otp.OnetimePasswordGeneratorBase.Dispose.html#Yort_Otp_OnetimePasswordGeneratorBase_Dispose
+  commentId: M:Yort.Otp.OnetimePasswordGeneratorBase.Dispose
+  fullName: Yort.Otp.OnetimePasswordGeneratorBase.Dispose()
+  nameWithType: OnetimePasswordGeneratorBase.Dispose()
+- uid: Yort.Otp.OnetimePasswordGeneratorBase.Dispose(System.Boolean)
+  name: Dispose(Boolean)
+  href: api/Yort.Otp.OnetimePasswordGeneratorBase.Dispose.html#Yort_Otp_OnetimePasswordGeneratorBase_Dispose_System_Boolean_
+  commentId: M:Yort.Otp.OnetimePasswordGeneratorBase.Dispose(System.Boolean)
+  fullName: Yort.Otp.OnetimePasswordGeneratorBase.Dispose(System.Boolean)
+  nameWithType: OnetimePasswordGeneratorBase.Dispose(Boolean)
+- uid: Yort.Otp.OnetimePasswordGeneratorBase.Dispose*
+  name: Dispose
+  href: api/Yort.Otp.OnetimePasswordGeneratorBase.Dispose.html
+  commentId: Overload:Yort.Otp.OnetimePasswordGeneratorBase.Dispose
+  fullName: Yort.Otp.OnetimePasswordGeneratorBase.Dispose
+  nameWithType: OnetimePasswordGeneratorBase.Dispose
+- uid: Yort.Otp.OnetimePasswordGeneratorBase.GeneratedPassword
+  name: GeneratedPassword
+  href: api/Yort.Otp.OnetimePasswordGeneratorBase.GeneratedPassword.html#Yort_Otp_OnetimePasswordGeneratorBase_GeneratedPassword
+  commentId: P:Yort.Otp.OnetimePasswordGeneratorBase.GeneratedPassword
+  fullName: Yort.Otp.OnetimePasswordGeneratorBase.GeneratedPassword
+  nameWithType: OnetimePasswordGeneratorBase.GeneratedPassword
+- uid: Yort.Otp.OnetimePasswordGeneratorBase.GeneratedPassword*
+  name: GeneratedPassword
+  href: api/Yort.Otp.OnetimePasswordGeneratorBase.GeneratedPassword.html
+  commentId: Overload:Yort.Otp.OnetimePasswordGeneratorBase.GeneratedPassword
+  fullName: Yort.Otp.OnetimePasswordGeneratorBase.GeneratedPassword
+  nameWithType: OnetimePasswordGeneratorBase.GeneratedPassword
+- uid: Yort.Otp.OnetimePasswordGeneratorBase.HashAlgorithm
+  name: HashAlgorithm
+  href: api/Yort.Otp.OnetimePasswordGeneratorBase.HashAlgorithm.html#Yort_Otp_OnetimePasswordGeneratorBase_HashAlgorithm
+  commentId: P:Yort.Otp.OnetimePasswordGeneratorBase.HashAlgorithm
+  fullName: Yort.Otp.OnetimePasswordGeneratorBase.HashAlgorithm
+  nameWithType: OnetimePasswordGeneratorBase.HashAlgorithm
+- uid: Yort.Otp.OnetimePasswordGeneratorBase.HashAlgorithm*
+  name: HashAlgorithm
+  href: api/Yort.Otp.OnetimePasswordGeneratorBase.HashAlgorithm.html
+  commentId: Overload:Yort.Otp.OnetimePasswordGeneratorBase.HashAlgorithm
+  fullName: Yort.Otp.OnetimePasswordGeneratorBase.HashAlgorithm
+  nameWithType: OnetimePasswordGeneratorBase.HashAlgorithm
+- uid: Yort.Otp.OnetimePasswordGeneratorBase.IsDisposed
+  name: IsDisposed
+  href: api/Yort.Otp.OnetimePasswordGeneratorBase.IsDisposed.html#Yort_Otp_OnetimePasswordGeneratorBase_IsDisposed
+  commentId: P:Yort.Otp.OnetimePasswordGeneratorBase.IsDisposed
+  fullName: Yort.Otp.OnetimePasswordGeneratorBase.IsDisposed
+  nameWithType: OnetimePasswordGeneratorBase.IsDisposed
+- uid: Yort.Otp.OnetimePasswordGeneratorBase.IsDisposed*
+  name: IsDisposed
+  href: api/Yort.Otp.OnetimePasswordGeneratorBase.IsDisposed.html
+  commentId: Overload:Yort.Otp.OnetimePasswordGeneratorBase.IsDisposed
+  fullName: Yort.Otp.OnetimePasswordGeneratorBase.IsDisposed
+  nameWithType: OnetimePasswordGeneratorBase.IsDisposed
+- uid: Yort.Otp.OnetimePasswordGeneratorBase.MovingFactor
+  name: MovingFactor
+  href: api/Yort.Otp.OnetimePasswordGeneratorBase.MovingFactor.html#Yort_Otp_OnetimePasswordGeneratorBase_MovingFactor
+  commentId: P:Yort.Otp.OnetimePasswordGeneratorBase.MovingFactor
+  fullName: Yort.Otp.OnetimePasswordGeneratorBase.MovingFactor
+  nameWithType: OnetimePasswordGeneratorBase.MovingFactor
+- uid: Yort.Otp.OnetimePasswordGeneratorBase.MovingFactor*
+  name: MovingFactor
+  href: api/Yort.Otp.OnetimePasswordGeneratorBase.MovingFactor.html
+  commentId: Overload:Yort.Otp.OnetimePasswordGeneratorBase.MovingFactor
+  fullName: Yort.Otp.OnetimePasswordGeneratorBase.MovingFactor
+  nameWithType: OnetimePasswordGeneratorBase.MovingFactor
+- uid: Yort.Otp.OnetimePasswordGeneratorBase.PasswordLength
+  name: PasswordLength
+  href: api/Yort.Otp.OnetimePasswordGeneratorBase.PasswordLength.html#Yort_Otp_OnetimePasswordGeneratorBase_PasswordLength
+  commentId: P:Yort.Otp.OnetimePasswordGeneratorBase.PasswordLength
+  fullName: Yort.Otp.OnetimePasswordGeneratorBase.PasswordLength
+  nameWithType: OnetimePasswordGeneratorBase.PasswordLength
+- uid: Yort.Otp.OnetimePasswordGeneratorBase.PasswordLength*
+  name: PasswordLength
+  href: api/Yort.Otp.OnetimePasswordGeneratorBase.PasswordLength.html
+  commentId: Overload:Yort.Otp.OnetimePasswordGeneratorBase.PasswordLength
+  fullName: Yort.Otp.OnetimePasswordGeneratorBase.PasswordLength
+  nameWithType: OnetimePasswordGeneratorBase.PasswordLength
+- uid: Yort.Otp.OnetimePasswordGeneratorBase.SetSecret(System.Byte[])
+  name: SetSecret(Byte[])
+  href: api/Yort.Otp.OnetimePasswordGeneratorBase.SetSecret.html#Yort_Otp_OnetimePasswordGeneratorBase_SetSecret_System_Byte___
+  commentId: M:Yort.Otp.OnetimePasswordGeneratorBase.SetSecret(System.Byte[])
+  name.vb: SetSecret(Byte())
+  fullName: Yort.Otp.OnetimePasswordGeneratorBase.SetSecret(System.Byte[])
+  fullName.vb: Yort.Otp.OnetimePasswordGeneratorBase.SetSecret(System.Byte())
+  nameWithType: OnetimePasswordGeneratorBase.SetSecret(Byte[])
+  nameWithType.vb: OnetimePasswordGeneratorBase.SetSecret(Byte())
+- uid: Yort.Otp.OnetimePasswordGeneratorBase.SetSecret*
+  name: SetSecret
+  href: api/Yort.Otp.OnetimePasswordGeneratorBase.SetSecret.html
+  commentId: Overload:Yort.Otp.OnetimePasswordGeneratorBase.SetSecret
+  fullName: Yort.Otp.OnetimePasswordGeneratorBase.SetSecret
+  nameWithType: OnetimePasswordGeneratorBase.SetSecret
+- uid: Yort.Otp.OnetimePasswordGeneratorFactory
+  name: OnetimePasswordGeneratorFactory
+  href: api/Yort.Otp.OnetimePasswordGeneratorFactory.html
+  commentId: T:Yort.Otp.OnetimePasswordGeneratorFactory
+  fullName: Yort.Otp.OnetimePasswordGeneratorFactory
+  nameWithType: OnetimePasswordGeneratorFactory
+- uid: Yort.Otp.OnetimePasswordGeneratorFactory.CreateFactory(System.Boolean,Yort.Otp.IHashAlgorithm,System.Int32)
+  name: CreateFactory(Boolean, IHashAlgorithm, Int32)
+  href: api/Yort.Otp.OnetimePasswordGeneratorFactory.CreateFactory.html#Yort_Otp_OnetimePasswordGeneratorFactory_CreateFactory_System_Boolean_Yort_Otp_IHashAlgorithm_System_Int32_
+  commentId: M:Yort.Otp.OnetimePasswordGeneratorFactory.CreateFactory(System.Boolean,Yort.Otp.IHashAlgorithm,System.Int32)
+  fullName: Yort.Otp.OnetimePasswordGeneratorFactory.CreateFactory(System.Boolean, Yort.Otp.IHashAlgorithm, System.Int32)
+  nameWithType: OnetimePasswordGeneratorFactory.CreateFactory(Boolean, IHashAlgorithm, Int32)
+- uid: Yort.Otp.OnetimePasswordGeneratorFactory.CreateFactory(System.Boolean,Yort.Otp.IHashAlgorithm,System.Int32,TimeSpan)
+  name: CreateFactory(Boolean, IHashAlgorithm, Int32, TimeSpan)
+  href: api/Yort.Otp.OnetimePasswordGeneratorFactory.CreateFactory.html#Yort_Otp_OnetimePasswordGeneratorFactory_CreateFactory_System_Boolean_Yort_Otp_IHashAlgorithm_System_Int32_TimeSpan_
+  commentId: M:Yort.Otp.OnetimePasswordGeneratorFactory.CreateFactory(System.Boolean,Yort.Otp.IHashAlgorithm,System.Int32,TimeSpan)
+  fullName: Yort.Otp.OnetimePasswordGeneratorFactory.CreateFactory(System.Boolean, Yort.Otp.IHashAlgorithm, System.Int32, TimeSpan)
+  nameWithType: OnetimePasswordGeneratorFactory.CreateFactory(Boolean, IHashAlgorithm, Int32, TimeSpan)
+- uid: Yort.Otp.OnetimePasswordGeneratorFactory.CreateFactory*
+  name: CreateFactory
+  href: api/Yort.Otp.OnetimePasswordGeneratorFactory.CreateFactory.html
+  commentId: Overload:Yort.Otp.OnetimePasswordGeneratorFactory.CreateFactory
+  fullName: Yort.Otp.OnetimePasswordGeneratorFactory.CreateFactory
+  nameWithType: OnetimePasswordGeneratorFactory.CreateFactory
+- uid: Yort.Otp.OnetimePasswordGeneratorFactory.CreateNewPasswordGenerator(System.Byte[])
+  name: CreateNewPasswordGenerator(Byte[])
+  href: api/Yort.Otp.OnetimePasswordGeneratorFactory.CreateNewPasswordGenerator.html#Yort_Otp_OnetimePasswordGeneratorFactory_CreateNewPasswordGenerator_System_Byte___
+  commentId: M:Yort.Otp.OnetimePasswordGeneratorFactory.CreateNewPasswordGenerator(System.Byte[])
+  name.vb: CreateNewPasswordGenerator(Byte())
+  fullName: Yort.Otp.OnetimePasswordGeneratorFactory.CreateNewPasswordGenerator(System.Byte[])
+  fullName.vb: Yort.Otp.OnetimePasswordGeneratorFactory.CreateNewPasswordGenerator(System.Byte())
+  nameWithType: OnetimePasswordGeneratorFactory.CreateNewPasswordGenerator(Byte[])
+  nameWithType.vb: OnetimePasswordGeneratorFactory.CreateNewPasswordGenerator(Byte())
+- uid: Yort.Otp.OnetimePasswordGeneratorFactory.CreateNewPasswordGenerator(System.Byte[],Int64)
+  name: CreateNewPasswordGenerator(Byte[], Int64)
+  href: api/Yort.Otp.OnetimePasswordGeneratorFactory.CreateNewPasswordGenerator.html#Yort_Otp_OnetimePasswordGeneratorFactory_CreateNewPasswordGenerator_System_Byte___Int64_
+  commentId: M:Yort.Otp.OnetimePasswordGeneratorFactory.CreateNewPasswordGenerator(System.Byte[],Int64)
+  name.vb: CreateNewPasswordGenerator(Byte(), Int64)
+  fullName: Yort.Otp.OnetimePasswordGeneratorFactory.CreateNewPasswordGenerator(System.Byte[], Int64)
+  fullName.vb: Yort.Otp.OnetimePasswordGeneratorFactory.CreateNewPasswordGenerator(System.Byte(), Int64)
+  nameWithType: OnetimePasswordGeneratorFactory.CreateNewPasswordGenerator(Byte[], Int64)
+  nameWithType.vb: OnetimePasswordGeneratorFactory.CreateNewPasswordGenerator(Byte(), Int64)
+- uid: Yort.Otp.OnetimePasswordGeneratorFactory.CreateNewPasswordGenerator*
+  name: CreateNewPasswordGenerator
+  href: api/Yort.Otp.OnetimePasswordGeneratorFactory.CreateNewPasswordGenerator.html
+  commentId: Overload:Yort.Otp.OnetimePasswordGeneratorFactory.CreateNewPasswordGenerator
+  fullName: Yort.Otp.OnetimePasswordGeneratorFactory.CreateNewPasswordGenerator
+  nameWithType: OnetimePasswordGeneratorFactory.CreateNewPasswordGenerator
+- uid: Yort.Otp.OnetimePasswordGeneratorFactory.FromOtpUrl(Uri)
+  name: FromOtpUrl(Uri)
+  href: api/Yort.Otp.OnetimePasswordGeneratorFactory.FromOtpUrl.html#Yort_Otp_OnetimePasswordGeneratorFactory_FromOtpUrl_Uri_
+  commentId: M:Yort.Otp.OnetimePasswordGeneratorFactory.FromOtpUrl(Uri)
+  fullName: Yort.Otp.OnetimePasswordGeneratorFactory.FromOtpUrl(Uri)
+  nameWithType: OnetimePasswordGeneratorFactory.FromOtpUrl(Uri)
+- uid: Yort.Otp.OnetimePasswordGeneratorFactory.FromOtpUrl(Uri,System.String@,System.Byte[]@,IDictionary{System.String,System.String}@)
+  name: FromOtpUrl(Uri, out String, out Byte[], out IDictionary<String, String>)
+  href: api/Yort.Otp.OnetimePasswordGeneratorFactory.FromOtpUrl.html#Yort_Otp_OnetimePasswordGeneratorFactory_FromOtpUrl_Uri_System_String__System_Byte____IDictionary_System_String_System_String___
+  commentId: M:Yort.Otp.OnetimePasswordGeneratorFactory.FromOtpUrl(Uri,System.String@,System.Byte[]@,IDictionary{System.String,System.String}@)
+  name.vb: FromOtpUrl(Uri, ByRef String, ByRef Byte(), ByRef IDictionary(Of String, String))
+  fullName: Yort.Otp.OnetimePasswordGeneratorFactory.FromOtpUrl(Uri, out System.String, out System.Byte[], out IDictionary<System.String, System.String>)
+  fullName.vb: Yort.Otp.OnetimePasswordGeneratorFactory.FromOtpUrl(Uri, ByRef System.String, ByRef System.Byte(), ByRef IDictionary(Of System.String, System.String))
+  nameWithType: OnetimePasswordGeneratorFactory.FromOtpUrl(Uri, out String, out Byte[], out IDictionary<String, String>)
+  nameWithType.vb: OnetimePasswordGeneratorFactory.FromOtpUrl(Uri, ByRef String, ByRef Byte(), ByRef IDictionary(Of String, String))
+- uid: Yort.Otp.OnetimePasswordGeneratorFactory.FromOtpUrl*
+  name: FromOtpUrl
+  href: api/Yort.Otp.OnetimePasswordGeneratorFactory.FromOtpUrl.html
+  commentId: Overload:Yort.Otp.OnetimePasswordGeneratorFactory.FromOtpUrl
+  fullName: Yort.Otp.OnetimePasswordGeneratorFactory.FromOtpUrl
+  nameWithType: OnetimePasswordGeneratorFactory.FromOtpUrl
+- uid: Yort.Otp.OnetimePasswordGeneratorFactory.GetOtpUrl(System.String,System.String,System.Int32,System.Byte[],Int64,IDictionary{System.String,System.String})
+  name: GetOtpUrl(String, String, Int32, Byte[], Int64, IDictionary<String, String>)
+  href: api/Yort.Otp.OnetimePasswordGeneratorFactory.GetOtpUrl.html#Yort_Otp_OnetimePasswordGeneratorFactory_GetOtpUrl_System_String_System_String_System_Int32_System_Byte___Int64_IDictionary_System_String_System_String__
+  commentId: M:Yort.Otp.OnetimePasswordGeneratorFactory.GetOtpUrl(System.String,System.String,System.Int32,System.Byte[],Int64,IDictionary{System.String,System.String})
+  name.vb: GetOtpUrl(String, String, Int32, Byte(), Int64, IDictionary(Of String, String))
+  fullName: Yort.Otp.OnetimePasswordGeneratorFactory.GetOtpUrl(System.String, System.String, System.Int32, System.Byte[], Int64, IDictionary<System.String, System.String>)
+  fullName.vb: Yort.Otp.OnetimePasswordGeneratorFactory.GetOtpUrl(System.String, System.String, System.Int32, System.Byte(), Int64, IDictionary(Of System.String, System.String))
+  nameWithType: OnetimePasswordGeneratorFactory.GetOtpUrl(String, String, Int32, Byte[], Int64, IDictionary<String, String>)
+  nameWithType.vb: OnetimePasswordGeneratorFactory.GetOtpUrl(String, String, Int32, Byte(), Int64, IDictionary(Of String, String))
+- uid: Yort.Otp.OnetimePasswordGeneratorFactory.GetOtpUrl(System.String,System.String,System.Int32,System.Byte[],TimeSpan,IDictionary{System.String,System.String})
+  name: GetOtpUrl(String, String, Int32, Byte[], TimeSpan, IDictionary<String, String>)
+  href: api/Yort.Otp.OnetimePasswordGeneratorFactory.GetOtpUrl.html#Yort_Otp_OnetimePasswordGeneratorFactory_GetOtpUrl_System_String_System_String_System_Int32_System_Byte___TimeSpan_IDictionary_System_String_System_String__
+  commentId: M:Yort.Otp.OnetimePasswordGeneratorFactory.GetOtpUrl(System.String,System.String,System.Int32,System.Byte[],TimeSpan,IDictionary{System.String,System.String})
+  name.vb: GetOtpUrl(String, String, Int32, Byte(), TimeSpan, IDictionary(Of String, String))
+  fullName: Yort.Otp.OnetimePasswordGeneratorFactory.GetOtpUrl(System.String, System.String, System.Int32, System.Byte[], TimeSpan, IDictionary<System.String, System.String>)
+  fullName.vb: Yort.Otp.OnetimePasswordGeneratorFactory.GetOtpUrl(System.String, System.String, System.Int32, System.Byte(), TimeSpan, IDictionary(Of System.String, System.String))
+  nameWithType: OnetimePasswordGeneratorFactory.GetOtpUrl(String, String, Int32, Byte[], TimeSpan, IDictionary<String, String>)
+  nameWithType.vb: OnetimePasswordGeneratorFactory.GetOtpUrl(String, String, Int32, Byte(), TimeSpan, IDictionary(Of String, String))
+- uid: Yort.Otp.OnetimePasswordGeneratorFactory.GetOtpUrl*
+  name: GetOtpUrl
+  href: api/Yort.Otp.OnetimePasswordGeneratorFactory.GetOtpUrl.html
+  commentId: Overload:Yort.Otp.OnetimePasswordGeneratorFactory.GetOtpUrl
+  fullName: Yort.Otp.OnetimePasswordGeneratorFactory.GetOtpUrl
+  nameWithType: OnetimePasswordGeneratorFactory.GetOtpUrl
+- uid: Yort.Otp.OnetimePasswordSecret
+  name: OnetimePasswordSecret
+  href: api/Yort.Otp.OnetimePasswordSecret.html
+  commentId: T:Yort.Otp.OnetimePasswordSecret
+  fullName: Yort.Otp.OnetimePasswordSecret
+  nameWithType: OnetimePasswordSecret
+- uid: Yort.Otp.OnetimePasswordSecret.FromAscii(System.String)
+  name: FromAscii(String)
+  href: api/Yort.Otp.OnetimePasswordSecret.FromAscii.html#Yort_Otp_OnetimePasswordSecret_FromAscii_System_String_
+  commentId: M:Yort.Otp.OnetimePasswordSecret.FromAscii(System.String)
+  fullName: Yort.Otp.OnetimePasswordSecret.FromAscii(System.String)
+  nameWithType: OnetimePasswordSecret.FromAscii(String)
+- uid: Yort.Otp.OnetimePasswordSecret.FromAscii*
+  name: FromAscii
+  href: api/Yort.Otp.OnetimePasswordSecret.FromAscii.html
+  commentId: Overload:Yort.Otp.OnetimePasswordSecret.FromAscii
+  fullName: Yort.Otp.OnetimePasswordSecret.FromAscii
+  nameWithType: OnetimePasswordSecret.FromAscii
+- uid: Yort.Otp.OnetimePasswordSecret.FromBase32(System.String)
+  name: FromBase32(String)
+  href: api/Yort.Otp.OnetimePasswordSecret.FromBase32.html#Yort_Otp_OnetimePasswordSecret_FromBase32_System_String_
+  commentId: M:Yort.Otp.OnetimePasswordSecret.FromBase32(System.String)
+  fullName: Yort.Otp.OnetimePasswordSecret.FromBase32(System.String)
+  nameWithType: OnetimePasswordSecret.FromBase32(String)
+- uid: Yort.Otp.OnetimePasswordSecret.FromBase32*
+  name: FromBase32
+  href: api/Yort.Otp.OnetimePasswordSecret.FromBase32.html
+  commentId: Overload:Yort.Otp.OnetimePasswordSecret.FromBase32
+  fullName: Yort.Otp.OnetimePasswordSecret.FromBase32
+  nameWithType: OnetimePasswordSecret.FromBase32
+- uid: Yort.Otp.OnetimePasswordSecret.FromHex(System.String)
+  name: FromHex(String)
+  href: api/Yort.Otp.OnetimePasswordSecret.FromHex.html#Yort_Otp_OnetimePasswordSecret_FromHex_System_String_
+  commentId: M:Yort.Otp.OnetimePasswordSecret.FromHex(System.String)
+  fullName: Yort.Otp.OnetimePasswordSecret.FromHex(System.String)
+  nameWithType: OnetimePasswordSecret.FromHex(String)
+- uid: Yort.Otp.OnetimePasswordSecret.FromHex*
+  name: FromHex
+  href: api/Yort.Otp.OnetimePasswordSecret.FromHex.html
+  commentId: Overload:Yort.Otp.OnetimePasswordSecret.FromHex
+  fullName: Yort.Otp.OnetimePasswordSecret.FromHex
+  nameWithType: OnetimePasswordSecret.FromHex
+- uid: Yort.Otp.OnetimePasswordSecret.ToBase32(System.Byte[])
+  name: ToBase32(Byte[])
+  href: api/Yort.Otp.OnetimePasswordSecret.ToBase32.html#Yort_Otp_OnetimePasswordSecret_ToBase32_System_Byte___
+  commentId: M:Yort.Otp.OnetimePasswordSecret.ToBase32(System.Byte[])
+  name.vb: ToBase32(Byte())
+  fullName: Yort.Otp.OnetimePasswordSecret.ToBase32(System.Byte[])
+  fullName.vb: Yort.Otp.OnetimePasswordSecret.ToBase32(System.Byte())
+  nameWithType: OnetimePasswordSecret.ToBase32(Byte[])
+  nameWithType.vb: OnetimePasswordSecret.ToBase32(Byte())
+- uid: Yort.Otp.OnetimePasswordSecret.ToBase32*
+  name: ToBase32
+  href: api/Yort.Otp.OnetimePasswordSecret.ToBase32.html
+  commentId: Overload:Yort.Otp.OnetimePasswordSecret.ToBase32
+  fullName: Yort.Otp.OnetimePasswordSecret.ToBase32
+  nameWithType: OnetimePasswordSecret.ToBase32
+- uid: Yort.Otp.Resource
+  name: Resource
+  href: api/Yort.Otp.Resource.html
+  commentId: T:Yort.Otp.Resource
+  fullName: Yort.Otp.Resource
+  nameWithType: Resource
+- uid: Yort.Otp.Resource.Attribute
+  name: Resource.Attribute
+  href: api/Yort.Otp.Resource.Attribute.html
+  commentId: T:Yort.Otp.Resource.Attribute
+  fullName: Yort.Otp.Resource.Attribute
+  nameWithType: Resource.Attribute
+- uid: Yort.Otp.Resource.String
+  name: Resource.String
+  href: api/Yort.Otp.Resource.String.html
+  commentId: T:Yort.Otp.Resource.String
+  fullName: Yort.Otp.Resource.String
+  nameWithType: Resource.String
+- uid: Yort.Otp.Resource.String.ApplicationName
+  name: ApplicationName
+  href: api/Yort.Otp.Resource.String.ApplicationName.html#Yort_Otp_Resource_String_ApplicationName
+  commentId: F:Yort.Otp.Resource.String.ApplicationName
+  fullName: Yort.Otp.Resource.String.ApplicationName
+  nameWithType: Resource.String.ApplicationName
+- uid: Yort.Otp.Resource.String.Hello
+  name: Hello
+  href: api/Yort.Otp.Resource.String.Hello.html#Yort_Otp_Resource_String_Hello
+  commentId: F:Yort.Otp.Resource.String.Hello
+  fullName: Yort.Otp.Resource.String.Hello
+  nameWithType: Resource.String.Hello
+- uid: Yort.Otp.Sha1HashAlgorithm
+  name: Sha1HashAlgorithm
+  href: api/Yort.Otp.Sha1HashAlgorithm.html
+  commentId: T:Yort.Otp.Sha1HashAlgorithm
+  fullName: Yort.Otp.Sha1HashAlgorithm
+  nameWithType: Sha1HashAlgorithm
+- uid: Yort.Otp.Sha1HashAlgorithm.ComputeHash(System.Byte[],System.Byte[])
+  name: ComputeHash(Byte[], Byte[])
+  href: api/Yort.Otp.Sha1HashAlgorithm.ComputeHash.html#Yort_Otp_Sha1HashAlgorithm_ComputeHash_System_Byte___System_Byte___
+  commentId: M:Yort.Otp.Sha1HashAlgorithm.ComputeHash(System.Byte[],System.Byte[])
+  name.vb: ComputeHash(Byte(), Byte())
+  fullName: Yort.Otp.Sha1HashAlgorithm.ComputeHash(System.Byte[], System.Byte[])
+  fullName.vb: Yort.Otp.Sha1HashAlgorithm.ComputeHash(System.Byte(), System.Byte())
+  nameWithType: Sha1HashAlgorithm.ComputeHash(Byte[], Byte[])
+  nameWithType.vb: Sha1HashAlgorithm.ComputeHash(Byte(), Byte())
+- uid: Yort.Otp.Sha1HashAlgorithm.ComputeHash*
+  name: ComputeHash
+  href: api/Yort.Otp.Sha1HashAlgorithm.ComputeHash.html
+  commentId: Overload:Yort.Otp.Sha1HashAlgorithm.ComputeHash
+  fullName: Yort.Otp.Sha1HashAlgorithm.ComputeHash
+  nameWithType: Sha1HashAlgorithm.ComputeHash
+- uid: Yort.Otp.Sha1HashAlgorithm.Name
+  name: Name
+  href: api/Yort.Otp.Sha1HashAlgorithm.Name.html#Yort_Otp_Sha1HashAlgorithm_Name
+  commentId: P:Yort.Otp.Sha1HashAlgorithm.Name
+  fullName: Yort.Otp.Sha1HashAlgorithm.Name
+  nameWithType: Sha1HashAlgorithm.Name
+- uid: Yort.Otp.Sha1HashAlgorithm.Name*
+  name: Name
+  href: api/Yort.Otp.Sha1HashAlgorithm.Name.html
+  commentId: Overload:Yort.Otp.Sha1HashAlgorithm.Name
+  fullName: Yort.Otp.Sha1HashAlgorithm.Name
+  nameWithType: Sha1HashAlgorithm.Name
+- uid: Yort.Otp.Sha256HashAlgorithm
+  name: Sha256HashAlgorithm
+  href: api/Yort.Otp.Sha256HashAlgorithm.html
+  commentId: T:Yort.Otp.Sha256HashAlgorithm
+  fullName: Yort.Otp.Sha256HashAlgorithm
+  nameWithType: Sha256HashAlgorithm
+- uid: Yort.Otp.Sha256HashAlgorithm.ComputeHash(System.Byte[],System.Byte[])
+  name: ComputeHash(Byte[], Byte[])
+  href: api/Yort.Otp.Sha256HashAlgorithm.ComputeHash.html#Yort_Otp_Sha256HashAlgorithm_ComputeHash_System_Byte___System_Byte___
+  commentId: M:Yort.Otp.Sha256HashAlgorithm.ComputeHash(System.Byte[],System.Byte[])
+  name.vb: ComputeHash(Byte(), Byte())
+  fullName: Yort.Otp.Sha256HashAlgorithm.ComputeHash(System.Byte[], System.Byte[])
+  fullName.vb: Yort.Otp.Sha256HashAlgorithm.ComputeHash(System.Byte(), System.Byte())
+  nameWithType: Sha256HashAlgorithm.ComputeHash(Byte[], Byte[])
+  nameWithType.vb: Sha256HashAlgorithm.ComputeHash(Byte(), Byte())
+- uid: Yort.Otp.Sha256HashAlgorithm.ComputeHash*
+  name: ComputeHash
+  href: api/Yort.Otp.Sha256HashAlgorithm.ComputeHash.html
+  commentId: Overload:Yort.Otp.Sha256HashAlgorithm.ComputeHash
+  fullName: Yort.Otp.Sha256HashAlgorithm.ComputeHash
+  nameWithType: Sha256HashAlgorithm.ComputeHash
+- uid: Yort.Otp.Sha256HashAlgorithm.Name
+  name: Name
+  href: api/Yort.Otp.Sha256HashAlgorithm.Name.html#Yort_Otp_Sha256HashAlgorithm_Name
+  commentId: P:Yort.Otp.Sha256HashAlgorithm.Name
+  fullName: Yort.Otp.Sha256HashAlgorithm.Name
+  nameWithType: Sha256HashAlgorithm.Name
+- uid: Yort.Otp.Sha256HashAlgorithm.Name*
+  name: Name
+  href: api/Yort.Otp.Sha256HashAlgorithm.Name.html
+  commentId: Overload:Yort.Otp.Sha256HashAlgorithm.Name
+  fullName: Yort.Otp.Sha256HashAlgorithm.Name
+  nameWithType: Sha256HashAlgorithm.Name
+- uid: Yort.Otp.Sha512HashAlgorithm
+  name: Sha512HashAlgorithm
+  href: api/Yort.Otp.Sha512HashAlgorithm.html
+  commentId: T:Yort.Otp.Sha512HashAlgorithm
+  fullName: Yort.Otp.Sha512HashAlgorithm
+  nameWithType: Sha512HashAlgorithm
+- uid: Yort.Otp.Sha512HashAlgorithm.ComputeHash(System.Byte[],System.Byte[])
+  name: ComputeHash(Byte[], Byte[])
+  href: api/Yort.Otp.Sha512HashAlgorithm.ComputeHash.html#Yort_Otp_Sha512HashAlgorithm_ComputeHash_System_Byte___System_Byte___
+  commentId: M:Yort.Otp.Sha512HashAlgorithm.ComputeHash(System.Byte[],System.Byte[])
+  name.vb: ComputeHash(Byte(), Byte())
+  fullName: Yort.Otp.Sha512HashAlgorithm.ComputeHash(System.Byte[], System.Byte[])
+  fullName.vb: Yort.Otp.Sha512HashAlgorithm.ComputeHash(System.Byte(), System.Byte())
+  nameWithType: Sha512HashAlgorithm.ComputeHash(Byte[], Byte[])
+  nameWithType.vb: Sha512HashAlgorithm.ComputeHash(Byte(), Byte())
+- uid: Yort.Otp.Sha512HashAlgorithm.ComputeHash*
+  name: ComputeHash
+  href: api/Yort.Otp.Sha512HashAlgorithm.ComputeHash.html
+  commentId: Overload:Yort.Otp.Sha512HashAlgorithm.ComputeHash
+  fullName: Yort.Otp.Sha512HashAlgorithm.ComputeHash
+  nameWithType: Sha512HashAlgorithm.ComputeHash
+- uid: Yort.Otp.Sha512HashAlgorithm.Name
+  name: Name
+  href: api/Yort.Otp.Sha512HashAlgorithm.Name.html#Yort_Otp_Sha512HashAlgorithm_Name
+  commentId: P:Yort.Otp.Sha512HashAlgorithm.Name
+  fullName: Yort.Otp.Sha512HashAlgorithm.Name
+  nameWithType: Sha512HashAlgorithm.Name
+- uid: Yort.Otp.Sha512HashAlgorithm.Name*
+  name: Name
+  href: api/Yort.Otp.Sha512HashAlgorithm.Name.html
+  commentId: Overload:Yort.Otp.Sha512HashAlgorithm.Name
+  fullName: Yort.Otp.Sha512HashAlgorithm.Name
+  nameWithType: Sha512HashAlgorithm.Name
+- uid: Yort.Otp.TimeBasedPasswordGenerator
+  name: TimeBasedPasswordGenerator
+  href: api/Yort.Otp.TimeBasedPasswordGenerator.html
+  commentId: T:Yort.Otp.TimeBasedPasswordGenerator
+  fullName: Yort.Otp.TimeBasedPasswordGenerator
+  nameWithType: TimeBasedPasswordGenerator
+- uid: Yort.Otp.TimeBasedPasswordGenerator.#ctor
+  name: TimeBasedPasswordGenerator()
+  href: api/Yort.Otp.TimeBasedPasswordGenerator.-ctor.html#Yort_Otp_TimeBasedPasswordGenerator__ctor
+  commentId: M:Yort.Otp.TimeBasedPasswordGenerator.#ctor
+  fullName: Yort.Otp.TimeBasedPasswordGenerator.TimeBasedPasswordGenerator()
+  nameWithType: TimeBasedPasswordGenerator.TimeBasedPasswordGenerator()
+- uid: Yort.Otp.TimeBasedPasswordGenerator.#ctor(System.Boolean)
+  name: TimeBasedPasswordGenerator(Boolean)
+  href: api/Yort.Otp.TimeBasedPasswordGenerator.-ctor.html#Yort_Otp_TimeBasedPasswordGenerator__ctor_System_Boolean_
+  commentId: M:Yort.Otp.TimeBasedPasswordGenerator.#ctor(System.Boolean)
+  fullName: Yort.Otp.TimeBasedPasswordGenerator.TimeBasedPasswordGenerator(System.Boolean)
+  nameWithType: TimeBasedPasswordGenerator.TimeBasedPasswordGenerator(Boolean)
+- uid: Yort.Otp.TimeBasedPasswordGenerator.#ctor(System.Boolean,System.Byte[])
+  name: TimeBasedPasswordGenerator(Boolean, Byte[])
+  href: api/Yort.Otp.TimeBasedPasswordGenerator.-ctor.html#Yort_Otp_TimeBasedPasswordGenerator__ctor_System_Boolean_System_Byte___
+  commentId: M:Yort.Otp.TimeBasedPasswordGenerator.#ctor(System.Boolean,System.Byte[])
+  name.vb: TimeBasedPasswordGenerator(Boolean, Byte())
+  fullName: Yort.Otp.TimeBasedPasswordGenerator.TimeBasedPasswordGenerator(System.Boolean, System.Byte[])
+  fullName.vb: Yort.Otp.TimeBasedPasswordGenerator.TimeBasedPasswordGenerator(System.Boolean, System.Byte())
+  nameWithType: TimeBasedPasswordGenerator.TimeBasedPasswordGenerator(Boolean, Byte[])
+  nameWithType.vb: TimeBasedPasswordGenerator.TimeBasedPasswordGenerator(Boolean, Byte())
+- uid: Yort.Otp.TimeBasedPasswordGenerator.#ctor*
+  name: TimeBasedPasswordGenerator
+  href: api/Yort.Otp.TimeBasedPasswordGenerator.-ctor.html
+  commentId: Overload:Yort.Otp.TimeBasedPasswordGenerator.#ctor
+  fullName: Yort.Otp.TimeBasedPasswordGenerator.TimeBasedPasswordGenerator
+  nameWithType: TimeBasedPasswordGenerator.TimeBasedPasswordGenerator
+- uid: Yort.Otp.TimeBasedPasswordGenerator.MovingFactor
+  name: MovingFactor
+  href: api/Yort.Otp.TimeBasedPasswordGenerator.MovingFactor.html#Yort_Otp_TimeBasedPasswordGenerator_MovingFactor
+  commentId: P:Yort.Otp.TimeBasedPasswordGenerator.MovingFactor
+  fullName: Yort.Otp.TimeBasedPasswordGenerator.MovingFactor
+  nameWithType: TimeBasedPasswordGenerator.MovingFactor
+- uid: Yort.Otp.TimeBasedPasswordGenerator.MovingFactor*
+  name: MovingFactor
+  href: api/Yort.Otp.TimeBasedPasswordGenerator.MovingFactor.html
+  commentId: Overload:Yort.Otp.TimeBasedPasswordGenerator.MovingFactor
+  fullName: Yort.Otp.TimeBasedPasswordGenerator.MovingFactor
+  nameWithType: TimeBasedPasswordGenerator.MovingFactor
+- uid: Yort.Otp.TimeBasedPasswordGenerator.TimeInterval
+  name: TimeInterval
+  href: api/Yort.Otp.TimeBasedPasswordGenerator.TimeInterval.html#Yort_Otp_TimeBasedPasswordGenerator_TimeInterval
+  commentId: P:Yort.Otp.TimeBasedPasswordGenerator.TimeInterval
+  fullName: Yort.Otp.TimeBasedPasswordGenerator.TimeInterval
+  nameWithType: TimeBasedPasswordGenerator.TimeInterval
+- uid: Yort.Otp.TimeBasedPasswordGenerator.TimeInterval*
+  name: TimeInterval
+  href: api/Yort.Otp.TimeBasedPasswordGenerator.TimeInterval.html
+  commentId: Overload:Yort.Otp.TimeBasedPasswordGenerator.TimeInterval
+  fullName: Yort.Otp.TimeBasedPasswordGenerator.TimeInterval
+  nameWithType: TimeBasedPasswordGenerator.TimeInterval
+- uid: Yort.Otp.TimeBasedPasswordGenerator.Timestamp
+  name: Timestamp
+  href: api/Yort.Otp.TimeBasedPasswordGenerator.Timestamp.html#Yort_Otp_TimeBasedPasswordGenerator_Timestamp
+  commentId: P:Yort.Otp.TimeBasedPasswordGenerator.Timestamp
+  fullName: Yort.Otp.TimeBasedPasswordGenerator.Timestamp
+  nameWithType: TimeBasedPasswordGenerator.Timestamp
+- uid: Yort.Otp.TimeBasedPasswordGenerator.Timestamp*
+  name: Timestamp
+  href: api/Yort.Otp.TimeBasedPasswordGenerator.Timestamp.html
+  commentId: Overload:Yort.Otp.TimeBasedPasswordGenerator.Timestamp
+  fullName: Yort.Otp.TimeBasedPasswordGenerator.Timestamp
+  nameWithType: TimeBasedPasswordGenerator.Timestamp
+- uid: Yort.Otp.TimeBasedPasswordGenerator.ValidUntilUtc
+  name: ValidUntilUtc
+  href: api/Yort.Otp.TimeBasedPasswordGenerator.ValidUntilUtc.html#Yort_Otp_TimeBasedPasswordGenerator_ValidUntilUtc
+  commentId: P:Yort.Otp.TimeBasedPasswordGenerator.ValidUntilUtc
+  fullName: Yort.Otp.TimeBasedPasswordGenerator.ValidUntilUtc
+  nameWithType: TimeBasedPasswordGenerator.ValidUntilUtc
+- uid: Yort.Otp.TimeBasedPasswordGenerator.ValidUntilUtc*
+  name: ValidUntilUtc
+  href: api/Yort.Otp.TimeBasedPasswordGenerator.ValidUntilUtc.html
+  commentId: Overload:Yort.Otp.TimeBasedPasswordGenerator.ValidUntilUtc
+  fullName: Yort.Otp.TimeBasedPasswordGenerator.ValidUntilUtc
+  nameWithType: TimeBasedPasswordGenerator.ValidUntilUtc

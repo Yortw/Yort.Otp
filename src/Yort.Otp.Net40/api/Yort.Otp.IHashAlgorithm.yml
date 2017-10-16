@@ -1,0 +1,159 @@
+### YamlMime:ManagedReference
+items:
+- uid: Yort.Otp.IHashAlgorithm
+  commentId: T:Yort.Otp.IHashAlgorithm
+  id: IHashAlgorithm
+  parent: Yort.Otp
+  children:
+  - Yort.Otp.IHashAlgorithm.ComputeHash(System.Byte[],System.Byte[])
+  - Yort.Otp.IHashAlgorithm.Name
+  langs:
+  - csharp
+  - vb
+  name: IHashAlgorithm
+  nameWithType: IHashAlgorithm
+  fullName: Yort.Otp.IHashAlgorithm
+  type: Interface
+  source:
+    id: IHashAlgorithm
+    path: ''
+    startLine: 1034
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.Otp
+  summary: "\nPortable/cross framework interface for hash algorithms to be used with this library.\n"
+  example: []
+  syntax:
+    content: public interface IHashAlgorithm
+    content.vb: Public Interface IHashAlgorithm
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Yort.Otp.IHashAlgorithm.ComputeHash(System.Byte[],System.Byte[])
+  commentId: M:Yort.Otp.IHashAlgorithm.ComputeHash(System.Byte[],System.Byte[])
+  id: ComputeHash(System.Byte[],System.Byte[])
+  parent: Yort.Otp.IHashAlgorithm
+  langs:
+  - csharp
+  - vb
+  name: ComputeHash(Byte[], Byte[])
+  nameWithType: IHashAlgorithm.ComputeHash(Byte[], Byte[])
+  fullName: Yort.Otp.IHashAlgorithm.ComputeHash(System.Byte[], System.Byte[])
+  type: Method
+  source:
+    id: ComputeHash
+    path: ''
+    startLine: 1043
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.Otp
+  summary: "\nComputes a new hash of the <code data-dev-comment-type=\"paramref\" class=\"paramref\">data</code> value using the <pararef name=\"key\"></pararef>.\n"
+  example: []
+  syntax:
+    content: byte[] ComputeHash(byte[] key, byte[] data)
+    parameters:
+    - id: key
+      type: System.Byte[]
+      description: A byte array containing the key (secret) to hash the data with.
+    - id: data
+      type: System.Byte[]
+      description: A byte array that is the data to be hashed.
+    return:
+      type: System.Byte[]
+      description: A new bte array containing the hashed data.
+    content.vb: Function ComputeHash(key As Byte(), data As Byte()) As Byte()
+  overload: Yort.Otp.IHashAlgorithm.ComputeHash*
+  nameWithType.vb: IHashAlgorithm.ComputeHash(Byte(), Byte())
+  fullName.vb: Yort.Otp.IHashAlgorithm.ComputeHash(System.Byte(), System.Byte())
+  name.vb: ComputeHash(Byte(), Byte())
+- uid: Yort.Otp.IHashAlgorithm.Name
+  commentId: P:Yort.Otp.IHashAlgorithm.Name
+  id: Name
+  parent: Yort.Otp.IHashAlgorithm
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: IHashAlgorithm.Name
+  fullName: Yort.Otp.IHashAlgorithm.Name
+  type: Property
+  source:
+    id: Name
+    path: ''
+    startLine: 1048
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.Otp
+  summary: "\nReturns a string containing the name of the hash algorithm, i,e SHA1.\n"
+  example: []
+  syntax:
+    content: string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Name As String
+  overload: Yort.Otp.IHashAlgorithm.Name*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: Yort.Otp
+  commentId: N:Yort.Otp
+  isExternal: false
+  name: Yort.Otp
+  nameWithType: Yort.Otp
+  fullName: Yort.Otp
+- uid: Yort.Otp.IHashAlgorithm.ComputeHash*
+  commentId: Overload:Yort.Otp.IHashAlgorithm.ComputeHash
+  isExternal: false
+  name: ComputeHash
+  nameWithType: IHashAlgorithm.ComputeHash
+  fullName: Yort.Otp.IHashAlgorithm.ComputeHash
+- uid: System.Byte[]
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Yort.Otp.IHashAlgorithm.Name*
+  commentId: Overload:Yort.Otp.IHashAlgorithm.Name
+  isExternal: false
+  name: Name
+  nameWithType: IHashAlgorithm.Name
+  fullName: Yort.Otp.IHashAlgorithm.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System

@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Yort.Otp | Yort.Otp </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Yort.Otp | Yort.Otp ">
+    <meta name="generator" content="docfx 2.25.1.0">
+    
+    <link rel="shortcut icon" href="images/YortOtpIcon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="images/YortOtpIconSmall.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                <ul class="nav level1 navbar-nav">
+                  <li class="active">
+                    <a href="index.html" title="Home" class="active">Home</a>
+                  </li>
+                  <li class="">
+                    <a href="api/Yort.Otp.html" title="API Documentation" class="">API Documentation</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="yortotp">Yort.Otp</h1>
+
+<p>A portable .Net class library for creating onetime passwords (based on [<a href="https://tools.ietf.org/html/rfc4226">rfc4226</a>] and [<a href="https://tools.ietf.org/html/rfc6238">rfc6238</a>]).
+These are the sorts of authentication codes used by Google/Microsoft/Facebook/Amazon etc. for second factor authentication.</p>
+<p><a href="https://github.com/Yortw/Yort.Otp/blob/master/LICENSE.md"><img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="GitHub license"></a> </p>
+<h2 id="supported-platforms">Supported Platforms</h2>
+<p>Currently;</p>
+<ul>
+<li>.Net Framework 4.0</li>
+<li>Windows Phone Silverlight (8.1+) </li>
+<li>Xamarin.iOS</li>
+<li>Xamarin.Android </li>
+<li>WinRT (Windows Store Apps 8.1)</li>
+<li>UWP 10+ (Windows 10 Universal Programs)</li>
+</ul>
+<h2 id="build-status">Build Status</h2>
+<p><a href="https://ci.appveyor.com/project/Yortw/yort-otp"><img src="https://ci.appveyor.com/api/projects/status/e8116lsaf7oeb74d?svg=true" alt="Build status"></a></p>
+<h2 id="available-on-nuget">Available on Nuget</h2>
+<pre><code class="lang-powershell">    PM&gt; Install-Package Yort.Otp
+</code></pre><p><a href="https://www.nuget.org/packages/Yort.Otp/"><img src="https://buildstats.info/nuget/Yort.Otp" alt="NuGet Badge"></a></p>
+<h2 id="samples">Samples</h2>
+<p>If you&#39;re implementing this on a server you should really read and understand the RFC specifications (linked above). There are sever specific issues around managing out of sync counters or client/server times that need to be understood.</p>
+<p>Here are some quick start samples;</p>
+<pre><code class="lang-c#">public void Main(string[] args)
+{
+    // Generate a &quot;time based&quot; password from the current time (retrieved via DateTime.UtcNow), 
+    // using the ASCII secret in the sample section of https://tools.ietf.org/html/rfc6238.
+    // This uses a default interval of 30 seconds (maximum length of time the password is value for).
+    using (var passwordGenerator = new TimeBasedPasswordGenerator(false, OnetimePasswordSecret.FromAscii(&quot;12345678901234567890&quot;)))
+    {
+        System.Diagnostics.Debug.WriteLine($&quot;Password: {passwordGenerator.GeneratedPassword} valid until {passwordGenerator.ValidUntilUtc.ToLocalTime()}&quot;);
+    }
+}
+</code></pre><pre><code class="lang-c#">public void Main(string[] args)
+{
+    // Generate a &quot;counter based&quot; one time password from a counter value of 10, 
+    // using the ASCII secret in the sample section of https://tools.ietf.org/html/rfc6238
+    // The counter should be incremented on each *successful* login, and stored between sessions. See the RFC spec for details.
+    using (var passwordGenerator = new CounterBasedPasswordGenerator(false, OnetimePasswordSecret.FromAscii(&quot;12345678901234567890&quot;)))
+    {
+        passwordGenerator.Counter = 10;
+        System.Diagnostics.Debug.WriteLine(&quot;Password: &quot; + passwordGenerator.GeneratedPassword);
+    }
+}
+</code></pre><p>If you&#39;re going to generate passwords for many different secrets but using an otherwise consistent configuration, factories can make that easier/more concise;</p>
+<pre><code class="lang-c#">// Counter based factory sample
+//During startup, obtain and keep a reference to a factory
+_OtpFactory = OnetimePasswordGeneratorFactory.CreateFactory(true, new Sha512HashAlgorithm(), 8);
+
+//When you want to generate a password...
+using (var passwordGenerator = _OtpFactory.CreateNewPasswordGenerator(OnetimePasswordSecret.FromAscii(&quot;12345678901234567890&quot;), 10))
+{
+    System.Diagnostics.Debug.WriteLine($&quot;Password: {passwordGenerator.GeneratedPassword}&quot;);
+}
+
+// Time based factory sample
+//During startup, obtain and keep a reference to a factory
+_OtpFactory = OnetimePasswordGeneratorFactory.CreateFactory(true, new Sha512HashAlgorithm(), 8, TimeSpan.FromMinutes(1));
+
+//When you want to generate a password...
+using (var passwordGenerator = _OtpFactory.CreateNewPasswordGenerator(OnetimePasswordSecret.FromAscii(&quot;12345678901234567890&quot;)))
+{
+    System.Diagnostics.Debug.WriteLine($&quot;Password: {passwordGenerator.GeneratedPassword} valid until {passwordGenerator.ValidUntilUtc.ToLocalTime()}&quot;);
+}
+</code></pre><p>This library <em>doesn&#39;t</em> generate QR codes, but it can generate the OTP uri to be turned into a QR code for configuring authenticator apps;</p>
+<pre><code class="lang-c#">var configureAuthenticatorUri = OnetimePasswordGeneratorFactory.GetOtpUrl(&quot;account name or identifier&quot;, &quot;SHA1&quot;, 8, OnetimePasswordSecret.FromAscii(&quot;12345678901234567890&quot;), TimeSpan.FromMinutes(1));
+</code></pre><p>Likewise, if given an OTP uri it can configure a password generator appropriately. This also returns the secret and account name, so they can be stored if required.</p>
+<pre><code class="lang-c#">string label = null;
+byte[] secret = null;
+var passwordGenerator = OnetimePasswordGeneratorFactory.FromOtpUrl(configureAuthenticatorUri, out label, out secret);
+</code></pre></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Yortw/Yort.Otp/blob/master/src/Yort.Otp.Net40/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright (c) 2017 Troy Willmot
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>
