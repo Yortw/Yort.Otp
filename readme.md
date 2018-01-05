@@ -78,7 +78,7 @@ _OtpFactory = OnetimePasswordGeneratorFactory.CreateFactory(true, new Sha512Hash
 //When you want to generate a password...
 using (var passwordGenerator = _OtpFactory.CreateNewPasswordGenerator(OnetimePasswordSecret.FromAscii("12345678901234567890")))
 {
-	System.Diagnostics.Debug.WriteLine($"Password: {passwordGenerator.GeneratedPassword} valid until {passwordGenerator.ValidUntilUtc.ToLocalTime()}");
+	System.Diagnostics.Debug.WriteLine($"Password: {passwordGenerator.GeneratedPassword} valid until {((TimeBasedPasswordGenerator)passwordGenerator).ValidUntilUtc.ToLocalTime()}");
 }
 ```
 
