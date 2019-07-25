@@ -1,0 +1,511 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Yort.Otp</name>
+    </assembly>
+    <members>
+        <member name="T:Yort.Otp.MD5HashAlgorithm">
+            <summary>
+            The MD5 hash algorithm wrapped in the <see cref="T:Yort.Otp.IHashAlgorithm"/> interface so it can be used across .Net frameworks.
+            </summary>
+        </member>
+        <member name="M:Yort.Otp.MD5HashAlgorithm.ComputeHash(System.Byte[],System.Byte[])">
+            <summary>
+            Computes a new hash of <paramref name="data"/> usign the <paramref name="key"/> specified.
+            </summary>
+            <param name="key">A byte array containing the key (secret) to use to generate a hash.</param>
+            <param name="data">A byte arrasy containing the data to be hashed.</param>
+            <returns>A new byte array containing the hash result.</returns>
+        </member>
+        <member name="P:Yort.Otp.MD5HashAlgorithm.Name">
+            <summary>
+            Returns the string "MD5".
+            </summary>
+        </member>
+        <member name="T:Yort.Otp.Sha1HashAlgorithm">
+            <summary>
+            The SHA1 hash algorithm wrapped in the <see cref="T:Yort.Otp.IHashAlgorithm"/> interface so it can be used across .Net frameworks.
+            </summary>
+        </member>
+        <member name="M:Yort.Otp.Sha1HashAlgorithm.ComputeHash(System.Byte[],System.Byte[])">
+            <summary>
+            Computes a new hash of <paramref name="data"/> usign the <paramref name="key"/> specified.
+            </summary>
+            <param name="key">A byte array containing the key (secret) to use to generate a hash.</param>
+            <param name="data">A byte arrasy containing the data to be hashed.</param>
+            <returns>A new byte array containing the hash result.</returns>
+        </member>
+        <member name="P:Yort.Otp.Sha1HashAlgorithm.Name">
+            <summary>
+            Returns the string "SHA1".
+            </summary>
+        </member>
+        <member name="T:Yort.Otp.Sha256HashAlgorithm">
+            <summary>
+            The SHA256 hash algorithm wrapped in the <see cref="T:Yort.Otp.IHashAlgorithm"/> interface so it can be used across .Net frameworks.
+            </summary>
+        </member>
+        <member name="M:Yort.Otp.Sha256HashAlgorithm.ComputeHash(System.Byte[],System.Byte[])">
+            <summary>
+            Computes a new hash of <paramref name="data"/> usign the <paramref name="key"/> specified.
+            </summary>
+            <param name="key">A byte array containing the key (secret) to use to generate a hash.</param>
+            <param name="data">A byte arrasy containing the data to be hashed.</param>
+            <returns>A new byte array containing the hash result.</returns>
+        </member>
+        <member name="P:Yort.Otp.Sha256HashAlgorithm.Name">
+            <summary>
+            Returns the string "SHA256".
+            </summary>
+        </member>
+        <member name="T:Yort.Otp.Sha512HashAlgorithm">
+            <summary>
+            The SHA512 hash algorithm wrapped in the <see cref="T:Yort.Otp.IHashAlgorithm"/> interface so it can be used across .Net frameworks.
+            </summary>
+        </member>
+        <member name="M:Yort.Otp.Sha512HashAlgorithm.ComputeHash(System.Byte[],System.Byte[])">
+            <summary>
+            Computes a new hash of <paramref name="data"/> usign the <paramref name="key"/> specified.
+            </summary>
+            <param name="key">A byte array containing the key (secret) to use to generate a hash.</param>
+            <param name="data">A byte arrasy containing the data to be hashed.</param>
+            <returns>A new byte array containing the hash result.</returns>
+        </member>
+        <member name="P:Yort.Otp.Sha512HashAlgorithm.Name">
+            <summary>
+            Returns the string "SHA512".
+            </summary>
+        </member>
+        <member name="T:Yort.Otp.Base32">
+            <summary>
+            Class used for conversion between byte array and Base32 notation
+            </summary>
+        </member>
+        <member name="F:Yort.Otp.Base32.InByteSize">
+            <summary>
+            Size of the regular byte in bits
+            </summary>
+        </member>
+        <member name="F:Yort.Otp.Base32.OutByteSize">
+            <summary>
+            Size of converted byte in bits
+            </summary>
+        </member>
+        <member name="F:Yort.Otp.Base32.Base32Alphabet">
+            <summary>
+            Alphabet
+            </summary>
+        </member>
+        <member name="M:Yort.Otp.Base32.ToBase32String(System.Byte[])">
+            <summary>
+            Convert byte array to Base32 format
+            </summary>
+            <param name="bytes">An array of bytes to convert to Base32 format</param>
+            <returns>Returns a string representing byte array</returns>
+        </member>
+        <member name="M:Yort.Otp.Base32.FromBase32String(System.String)">
+            <summary>
+            Convert base32 string to array of bytes
+            </summary>
+            <remarks>
+            <para>This method ignores spaces, which may be added for ease of reading.</para>
+            </remarks>
+            <param name="base32String">Base32 string to convert</param>
+            <returns>Returns a byte array converted from the string</returns>
+        </member>
+        <member name="T:Yort.Otp.CounterBasedPasswordGenerator">
+            <summary>
+            A onetime password generator based on a counter that increments on each successful login.
+            </summary>
+            <remarks>
+            <para>Default values are SHA1, a 30 second time interval and a password length of 6. The default <see cref="P:Yort.Otp.CounterBasedPasswordGenerator.Counter"/> value is zero.</para>
+            </remarks>
+        </member>
+        <member name="M:Yort.Otp.CounterBasedPasswordGenerator.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+            <remarks>
+            <para>Initialises the instance so it will erase assigned secrets on dispose or change of secret, and with no current secret allocated.</para>
+            </remarks>
+        </member>
+        <member name="M:Yort.Otp.CounterBasedPasswordGenerator.#ctor(System.Boolean)">
+            <summary>
+            Partial constructor.
+            </summary>
+            <remarks>
+            <para>Use this if you are keeping secrets in memory and using them outside of class instances from this library, in which case <paramref name="eraseSecrets"/> should be false to prevent the data from being overwritten unexpectedly.</para>
+            </remarks>
+            <param name="eraseSecrets">If true, secrets asssigned are overwritten with zero value bytes when this instance is disposed, or if a new secret is assigned. This *helps* *reduce* the chance of secrets ending up in swap files or being scraped from RAM.</param>
+        </member>
+        <member name="M:Yort.Otp.CounterBasedPasswordGenerator.#ctor(System.Boolean,System.Byte[])">
+            <summary>
+            Full constructor, initialises this instance with an already known secret.
+            </summary>
+            <remarks>
+            <para>If you are keeping secrets in memory and using them outside of class instances from this library, <paramref name="eraseSecrets"/> should be false to prevent the data from being overwritten unexpectedly.</para>
+            </remarks>
+            <param name="eraseSecrets">If true, secrets asssigned are overwritten with zero value bytes when this instance is disposed, or if a new secret is assigned. This *helps* *reduce* the chance of secrets ending up in swap files or being scraped from RAM.</param>
+            <param name="secret">A byte array containign the secret to use for generating passwords.</param>
+        </member>
+        <member name="P:Yort.Otp.CounterBasedPasswordGenerator.Counter">
+            <summary>
+            Sets or returns the current value of the 'counter' which is turned into a onetime use password. 
+            </summary>
+            <remarks>
+            <para>Each time a successful login occurs, this counter should be incremented. See the https://tools.ietf.org/html/rfc4226 specification on how to manage the counter.</para>
+            </remarks>
+        </member>
+        <member name="T:Yort.Otp.OnetimePasswordAccount">
+            <summary>
+            Represents details of an account protected by OTP, and an associated OTP generator.
+            </summary>
+        </member>
+        <member name="P:Yort.Otp.OnetimePasswordAccount.Label">
+            <summary>
+            The name of the account.
+            </summary>
+        </member>
+        <member name="P:Yort.Otp.OnetimePasswordAccount.Issuer">
+            <summary>
+            Optional. The name of the organisation or company the accuont belongs to.
+            </summary>
+        </member>
+        <member name="P:Yort.Otp.OnetimePasswordAccount.Secret">
+            <summary>
+            The raw bytes for the account secret used to generate OTP codes.
+            </summary>
+        </member>
+        <member name="P:Yort.Otp.OnetimePasswordAccount.PasswordGenerator">
+            <summary>
+            A <see cref="T:Yort.Otp.IOnetimePasswordGenerator"/> instance used to generate OTP codes for this account.
+            </summary>
+        </member>
+        <member name="P:Yort.Otp.OnetimePasswordAccount.Metadata">
+            <summary>
+            A dictionary of additional values associated with the account.
+            </summary>
+        </member>
+        <member name="T:Yort.Otp.OnetimePasswordGeneratorBase">
+            <summary>
+            Base cass used for onetime password generators, provides re-use as well as a "versionable" common interface.
+            </summary>
+        </member>
+        <member name="M:Yort.Otp.OnetimePasswordGeneratorBase.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+            <remarks>
+            <para>Initialises the instance so it will erase assigned secrets on dispose or change of secret, and with no current secret allocated.</para>
+            </remarks>
+        </member>
+        <member name="M:Yort.Otp.OnetimePasswordGeneratorBase.#ctor(System.Boolean)">
+            <summary>
+            Partial constructor.
+            </summary>
+            <remarks>
+            <para>Use this if you are keeping secrets in memory and using them outside of class instances from this library, in which case <paramref name="eraseSecrets"/> should be false to prevent the data from being overwritten unexpectedly.</para>
+            </remarks>
+            <param name="eraseSecrets">If true, secrets asssigned are overwritten with zero value bytes when this instance is disposed, or if a new secret is assigned. This *helps* *reduce* the chance of secrets ending up in swap files or being scraped from RAM.</param>
+        </member>
+        <member name="M:Yort.Otp.OnetimePasswordGeneratorBase.#ctor(System.Boolean,System.Byte[])">
+            <summary>
+            Full constructor, initialises this instance with an already known secret.
+            </summary>
+            <remarks>
+            <para>If you are keeping secrets in memory and using them outside of class instances from this library, <paramref name="eraseSecrets"/> should be false to prevent the data from being overwritten unexpectedly.</para>
+            </remarks>
+            <param name="eraseSecrets">If true, secrets asssigned are overwritten with zero value bytes when this instance is disposed, or if a new secret is assigned. This *helps* *reduce* the chance of secrets ending up in swap files or being scraped from RAM.</param>
+            <param name="secret">A byte array containign the secret to use for generating passwords.</param>
+        </member>
+        <member name="P:Yort.Otp.OnetimePasswordGeneratorBase.HashAlgorithm">
+            <summary>
+            Sets or rturns an <see cref="T:Yort.Otp.IHashAlgorithm"/> implementation used to generate onetime passwords.
+            </summary>
+            <seealso cref="T:Yort.Otp.Sha1HashAlgorithm"/>
+            <seealso cref="T:Yort.Otp.Sha256HashAlgorithm"/>
+            <seealso cref="T:Yort.Otp.Sha512HashAlgorithm"/>
+            <seealso cref="T:Yort.Otp.MD5HashAlgorithm"/>
+        </member>
+        <member name="P:Yort.Otp.OnetimePasswordGeneratorBase.IsDisposed">
+            <summary>
+            Returns a boolean indicating whether or not this instance has been disposed.
+            </summary>
+            <seealso cref="M:Yort.Otp.OnetimePasswordGeneratorBase.Dispose"/>
+        </member>
+        <member name="P:Yort.Otp.OnetimePasswordGeneratorBase.PasswordLength">
+            <summary>
+            Sets or returns length of the password to generate.
+            </summary>
+            <remarks>
+            <para>Allowed values are 1 through 8, though 6 is the default and 8 is the other commonly used values. Other values are discouraged and may not be supported by other standardised systems.</para>
+            </remarks>
+        </member>
+        <member name="P:Yort.Otp.OnetimePasswordGeneratorBase.MovingFactor">
+            <summary>
+            Sets or returns a 64 bit integer which is the value that changes over time (either literally, or on some even such as a successful login) which is converted into a onetime password.
+            </summary>
+        </member>
+        <member name="P:Yort.Otp.OnetimePasswordGeneratorBase.GeneratedPassword">
+            <summary>
+            Returns the password generated for the current <seealso cref="P:Yort.Otp.OnetimePasswordGeneratorBase.MovingFactor"/> using the provided secret and <seealso cref="P:Yort.Otp.OnetimePasswordGeneratorBase.HashAlgorithm"/>.
+            </summary>
+            <see cref="M:Yort.Otp.OnetimePasswordGeneratorBase.SetSecret(System.Byte[])"/>
+            <see cref="P:Yort.Otp.OnetimePasswordGeneratorBase.HashAlgorithm"/>
+            <see cref="P:Yort.Otp.OnetimePasswordGeneratorBase.PasswordLength"/>
+            <see cref="P:Yort.Otp.OnetimePasswordGeneratorBase.MovingFactor"/>
+        </member>
+        <member name="M:Yort.Otp.OnetimePasswordGeneratorBase.Dispose(System.Boolean)">
+            <summary>
+            Used by derived classes to clean up resources held by the base class.
+            </summary>
+            <remarks>
+            <para>If the instance was constructed with the eraseSecrets argument set to true, the currently assigned secret will be overwritten in memory with zeros.</para>
+            </remarks>
+            <param name="isDisposing">True if dispose is being explicitly called from code, false if it is being called from a destructor.</param>
+        </member>
+        <member name="M:Yort.Otp.OnetimePasswordGeneratorBase.SetSecret(System.Byte[])">
+            <summary>
+            Sets the secret used to generate passwords.
+            </summary>
+            <remarks>
+            <para>If the instance was constructed with the eraseSecrets argument set to true, any existing secret will be overwritten in memory with zeros.</para>
+            </remarks>
+            <param name="secret">A byte array containing the secret value used with the <see cref="P:Yort.Otp.OnetimePasswordGeneratorBase.HashAlgorithm"/> to generate onetime passwords.</param>
+        </member>
+        <member name="M:Yort.Otp.OnetimePasswordGeneratorBase.Dispose">
+            <summary>
+            Disposes this class and any internal resources.
+            </summary>
+            <remarks>
+            <para>If the instance was constructed with the eraseSecrets argument set to true, any existing secret will be overwritten in memory with zeros.</para>
+            </remarks>
+        </member>
+        <member name="T:Yort.Otp.OnetimePasswordGeneratorFactory">
+            <summary>
+            Factory that makes instantiating and configuring onetime password generators more concise.
+            Also provides methods for creating password generators from otp urls, and generating new urls.
+            </summary>
+            <seealso cref="T:Yort.Otp.TimeBasedPasswordGenerator"/>
+            <seealso cref="T:Yort.Otp.CounterBasedPasswordGenerator"/>
+        </member>
+        <member name="M:Yort.Otp.OnetimePasswordGeneratorFactory.CreateFactory(System.Boolean,Yort.Otp.IHashAlgorithm,System.Int32)">
+            <summary>
+            Returns a factory instance that creates pre-configured <see cref="T:Yort.Otp.CounterBasedPasswordGenerator"/> instances.
+            </summary>
+            <param name="eraseSecrets">True if the secrets provided to the generated <see cref="T:Yort.Otp.CounterBasedPasswordGenerator"/> instances should be overwritten in memory when the generator is disposed.</param>
+            <param name="hashAlgorithm">A <see cref="T:Yort.Otp.IHashAlgorithm"/> implementation that will be used by the <see cref="T:Yort.Otp.CounterBasedPasswordGenerator"/> instances to generate passwords.</param>
+            <param name="passwordLength">The number of digits in the generated passwords, default is 6, usual values are 6 or 8.</param>
+            <returns>A <see cref="T:Yort.Otp.OnetimePasswordGeneratorFactory"/> instance that can be used to create <see cref="T:Yort.Otp.CounterBasedPasswordGenerator"/> instances.</returns>
+            <seealso cref="T:Yort.Otp.OnetimePasswordGeneratorFactory"/>
+        </member>
+        <member name="M:Yort.Otp.OnetimePasswordGeneratorFactory.CreateFactory(System.Boolean,Yort.Otp.IHashAlgorithm,System.Int32,System.TimeSpan)">
+            <summary>
+            Returns a factory instance that creates pre-configured <see cref="T:Yort.Otp.TimeBasedPasswordGenerator"/> instances.
+            </summary>
+            <param name="eraseSecrets">True if the secrets provided to the generated <see cref="T:Yort.Otp.TimeBasedPasswordGenerator"/> instances should be overwritten in memory when the generator is disposed.</param>
+            <param name="hashAlgorithm">A <see cref="T:Yort.Otp.IHashAlgorithm"/> implementation that will be used by the <see cref="T:Yort.Otp.TimeBasedPasswordGenerator"/> instances to generate passwords.</param>
+            <param name="passwordLength">The number of digits in the generated passwords, default is 6, usual values are 6 or 8.</param>
+            <param name="timeInterval">The interval for which each password is valid, the default is 30 seconds.</param>
+            <returns>A <see cref="T:Yort.Otp.OnetimePasswordGeneratorFactory"/> instance that can be used to create <see cref="T:Yort.Otp.TimeBasedPasswordGenerator"/> instances.</returns>
+            <seealso cref="T:Yort.Otp.TimeBasedPasswordGenerator"/>
+        </member>
+        <member name="M:Yort.Otp.OnetimePasswordGeneratorFactory.FromOtpUrl(System.Uri)">
+            <summary>
+            Creates either a <see cref="T:Yort.Otp.TimeBasedPasswordGenerator"/> or <see cref="T:Yort.Otp.CounterBasedPasswordGenerator"/> instance pre-configured with values from an otp style uri.
+            </summary>
+            <remarks>
+            See https://github.com/google/google-authenticator/wiki/Key-Uri-Format for details of the uri format.
+            </remarks>
+            <param name="url">The url to parse and turn into a password generator.</param>
+            <returns>A pre-configured instance of either a <see cref="T:Yort.Otp.TimeBasedPasswordGenerator"/> or <see cref="T:Yort.Otp.CounterBasedPasswordGenerator"/>.</returns>
+            <seealso cref="M:Yort.Otp.OnetimePasswordGeneratorFactory.GetOtpUrl(System.String,System.String,System.Int32,System.Byte[],System.Int64,System.Collections.Generic.IDictionary{System.String,System.String})"/>
+            <seealso cref="M:Yort.Otp.OnetimePasswordGeneratorFactory.GetOtpUrl(System.String,System.String,System.Int32,System.Byte[],System.TimeSpan,System.Collections.Generic.IDictionary{System.String,System.String})"/>
+        </member>
+        <member name="M:Yort.Otp.OnetimePasswordGeneratorFactory.GetOtpUrl(System.String,System.String,System.Int32,System.Byte[],System.Int64,System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Creates a new <seealso cref="T:System.Uri"/> that can be used to configure an authentication app. These codes are normally used as the content of a QR code.
+            </summary>
+            <param name="label">The name of the account or resource protected by this secret.</param>
+            <param name="algorithmName">The name of the algorithm used with the secret to generate passwords.</param>
+            <param name="passwordLength">The length of the password, default is 6, usual values are 6 or 8.</param>
+            <param name="secret">The secret used to protect this account.</param>
+            <param name="counter">The initial counter to use when generating passwords for this account.</param>
+            <param name="metadata">A dictionary containing additional metadata to be encoded into the url. If this value is null or empty, no additional values are added.</param>
+            <returns>A new <seealso cref="T:System.Uri"/> that can be used to configure an authentication app to generate compatible passwords.</returns>
+            <seealso cref="M:Yort.Otp.OnetimePasswordGeneratorFactory.FromOtpUrl(System.Uri)"/>
+        </member>
+        <member name="M:Yort.Otp.OnetimePasswordGeneratorFactory.GetOtpUrl(System.String,System.String,System.Int32,System.Byte[],System.TimeSpan,System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Creates a new <seealso cref="T:System.Uri"/> that can be used to configure an authentication app. These codes are normally used as the content of a QR code.
+            </summary>
+            <param name="label">The name of the account or resource protected by this secret.</param>
+            <param name="algorithmName">The name of the algorithm used with the secret to generate passwords.</param>
+            <param name="passwordLength">The length of the password, default is 6, usual values are 6 or 8.</param>
+            <param name="secret">The secret used to protect this account.</param>
+            <param name="timeInterval">The time interval each generated password if valid for. Default value is 30.</param>
+            <param name="metadata">A dictionary containing additional metadata to be encoded into the url. If this value is null or empty, no additional values are added.</param>
+            <returns>A new <seealso cref="T:System.Uri"/> that can be used to configure an authentication app to generate compatible passwords.</returns>
+            <seealso cref="M:Yort.Otp.OnetimePasswordGeneratorFactory.FromOtpUrl(System.Uri)"/>
+        </member>
+        <member name="M:Yort.Otp.OnetimePasswordGeneratorFactory.CreateNewPasswordGenerator(System.Byte[])">
+            <summary>
+            Returns a time based password generator.
+            </summary>
+            <param name="secret">The secret to use for the new password generator.</param>
+            <returns>A pre-configured <seealso cref="T:Yort.Otp.TimeBasedPasswordGenerator"/> instance.</returns>
+        </member>
+        <member name="M:Yort.Otp.OnetimePasswordGeneratorFactory.CreateNewPasswordGenerator(System.Byte[],System.Int64)">
+            <summary>
+            Returns a counter based password generator.
+            </summary>
+            <param name="secret">The secret to use for the new password generator.</param>
+            <param name="counter">The current counter to use for the new password  generator.</param>
+            <returns>A pre-configured <seealso cref="T:Yort.Otp.CounterBasedPasswordGenerator"/> instance.</returns>
+        </member>
+        <member name="T:Yort.Otp.OnetimePasswordSecret">
+            <summary>
+            A static class containing utility methods useful for converting onetime password secrets to and from various formats.
+            </summary>
+        </member>
+        <member name="M:Yort.Otp.OnetimePasswordSecret.FromHex(System.String)">
+            <summary>
+            Converts a string containing hexadecimal characters to a byte array suitable for use as a onetime password secret.
+            </summary>
+            <param name="hex">A string containing hexadecimal characters to convert to a secret.</param>
+            <returns>A byte array that is the secret to use.</returns>
+        </member>
+        <member name="M:Yort.Otp.OnetimePasswordSecret.FromBase32(System.String)">
+            <summary>
+            Converts a string containing base 32 characters to a byte array suitable for use as a onetime password secret.
+            </summary>
+            <param name="base32">A string containing base 32 characters to convert to a secret.</param>
+            <returns>A byte array that is the secret to use.</returns>
+        </member>
+        <member name="M:Yort.Otp.OnetimePasswordSecret.ToBase32(System.Byte[])">
+            <summary>
+            Converts a raw secret (in byte array form) to a base 32 string.
+            </summary>
+            <param name="secret">A byte array containing the secret to convert.</param>
+            <returns>A string containing the base 32 encoded version of the secret.</returns>
+        </member>
+        <member name="M:Yort.Otp.OnetimePasswordSecret.FromAscii(System.String)">
+            <summary>
+            Converts a string containing ASCII characters to a byte array suitable for use as a onetime password secret.
+            </summary>
+            <param name="text">A string containing ASCII characters to convert to a secret.</param>
+            <returns>A byte array that is the secret to use.</returns>
+        </member>
+        <member name="T:Yort.Otp.TimeBasedPasswordGenerator">
+            <summary>
+            Used to generate passwords based on a specific time, using the <see cref="!:https://tools.ietf.org/html/rfc6238">rfc6238 specification</see> for TOTP.
+            </summary>
+            <remarks>
+            <para>Default values are SHA1, a 30 second time interval and a password length of 6. The current time from the device's clock is used (dynamically) to create the password, so the <see cref="P:Yort.Otp.OnetimePasswordGeneratorBase.GeneratedPassword"/> property will change over time.</para>
+            <para>
+            <code>
+            //Configures a password generator using a base 32 secret (as typically provided by Google).
+            var passwordGenerator = new TimeBasedPassword();
+            passwordGenerator.SetSecret(TimeBasedPassword.SecretFromBase32String("JBSWY3DPEHPK3PXP"));
+            var password = passwordGenerator.GeneratedPassword;
+            </code>
+            </para>
+            </remarks>
+        </member>
+        <member name="M:Yort.Otp.TimeBasedPasswordGenerator.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+            <remarks>
+            <para>Initialises the instance so it will erase assigned secrets on dispose or change of secret, and with no current secret allocated.</para>
+            </remarks>
+        </member>
+        <member name="M:Yort.Otp.TimeBasedPasswordGenerator.#ctor(System.Boolean)">
+            <summary>
+            Partial constructor.
+            </summary>
+            <remarks>
+            <para>Use this if you are keeping secrets in memory and using them outside of class instances from this library, in which case <paramref name="eraseSecrets"/> should be false to prevent the data from being overwritten unexpectedly.</para>
+            </remarks>
+            <param name="eraseSecrets">If true, secrets asssigned are overwritten with zero value bytes when this instance is disposed, or if a new secret is assigned. This *helps* *reduce* the chance of secrets ending up in swap files or being scraped from RAM.</param>
+        </member>
+        <member name="M:Yort.Otp.TimeBasedPasswordGenerator.#ctor(System.Boolean,System.Byte[])">
+            <summary>
+            Full constructor, initialises this instance with an already known secret.
+            </summary>
+            <remarks>
+            <para>If you are keeping secrets in memory and using them outside of class instances from this library, <paramref name="eraseSecrets"/> should be false to prevent the data from being overwritten unexpectedly.</para>
+            </remarks>
+            <param name="eraseSecrets">If true, secrets asssigned are overwritten with zero value bytes when this instance is disposed, or if a new secret is assigned. This *helps* *reduce* the chance of secrets ending up in swap files or being scraped from RAM.</param>
+            <param name="secret">A byte array containign the secret to use for generating passwords.</param>
+        </member>
+        <member name="P:Yort.Otp.TimeBasedPasswordGenerator.TimeInterval">
+            <summary>
+            Sets or returns the amount of time each generated password is valid for. The default is 30 seconds.
+            </summary>
+        </member>
+        <member name="P:Yort.Otp.TimeBasedPasswordGenerator.Timestamp">
+            <summary>
+            Sets or returns the date and time to calculate a password for. If null, the current date and time from the device/OS clock is used.
+            </summary>
+        </member>
+        <member name="P:Yort.Otp.TimeBasedPasswordGenerator.ValidUntilUtc">
+            <summary>
+            Sets or returns the last second at which the value of <see cref="P:Yort.Otp.OnetimePasswordGeneratorBase.GeneratedPassword"/> is valid until.
+            </summary>
+        </member>
+        <member name="P:Yort.Otp.TimeBasedPasswordGenerator.MovingFactor">
+            <summary>
+            Uses the <see cref="P:Yort.Otp.TimeBasedPasswordGenerator.Timestamp"/> or current clock time and <see cref="P:Yort.Otp.TimeBasedPasswordGenerator.TimeInterval"/> to generate the counter/moving factor for password generation.
+            </summary>
+        </member>
+        <member name="T:Yort.Otp.IHashAlgorithm">
+            <summary>
+            Portable/cross framework interface for hash algorithms to be used with this library.
+            </summary>
+        </member>
+        <member name="M:Yort.Otp.IHashAlgorithm.ComputeHash(System.Byte[],System.Byte[])">
+            <summary>
+            Computes a new hash of the <paramref name="data"/> value using the <pararef name="key"/>.
+            </summary>
+            <param name="key">A byte array containing the key (secret) to hash the data with.</param>
+            <param name="data">A byte array that is the data to be hashed.</param>
+            <returns>A new bte array containing the hashed data.</returns>
+        </member>
+        <member name="P:Yort.Otp.IHashAlgorithm.Name">
+            <summary>
+            Returns a string containing the name of the hash algorithm, i,e SHA1.
+            </summary>
+        </member>
+        <member name="T:Yort.Otp.IOnetimePasswordGenerator">
+            <summary>
+            Common interface for classes that can generate second authentication factor passwords.
+            </summary>
+        </member>
+        <member name="P:Yort.Otp.IOnetimePasswordGenerator.GeneratedPassword">
+            <summary>
+            Returns a string containing the current password.
+            </summary>
+        </member>
+        <member name="P:Yort.Otp.IOnetimePasswordGenerator.HashAlgorithm">
+            <summary>
+            Sets or returns the hash algorithm used with the secret to generate passwords.
+            </summary>
+            <seealso cref="T:Yort.Otp.Sha1HashAlgorithm"/>
+            <seealso cref="T:Yort.Otp.Sha256HashAlgorithm"/>
+            <seealso cref="T:Yort.Otp.Sha512HashAlgorithm"/>
+            <seealso cref="T:Yort.Otp.MD5HashAlgorithm"/>
+        </member>
+        <member name="P:Yort.Otp.IOnetimePasswordGenerator.PasswordLength">
+            <summary>
+            Sets or returns then length of password to generate. Default value is 6, usual values are 6 or 8.
+            </summary>
+        </member>
+        <member name="M:Yort.Otp.IOnetimePasswordGenerator.SetSecret(System.Byte[])">
+            <summary>
+            Sets the secret value used to generate passwords.
+            </summary>
+            <param name="secret">A byte array containing the secret value used to generate passwords.</param>
+        </member>
+    </members>
+</doc>

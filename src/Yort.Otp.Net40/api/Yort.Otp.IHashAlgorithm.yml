@@ -17,7 +17,7 @@ items:
   source:
     id: IHashAlgorithm
     path: ''
-    startLine: 1034
+    startLine: 1046
   assemblies:
   - cs.temp.dll
   namespace: Yort.Otp
@@ -46,7 +46,7 @@ items:
   source:
     id: ComputeHash
     path: ''
-    startLine: 1043
+    startLine: 1055
   assemblies:
   - cs.temp.dll
   namespace: Yort.Otp
@@ -83,7 +83,7 @@ items:
   source:
     id: Name
     path: ''
-    startLine: 1048
+    startLine: 1060
   assemblies:
   - cs.temp.dll
   namespace: Yort.Otp

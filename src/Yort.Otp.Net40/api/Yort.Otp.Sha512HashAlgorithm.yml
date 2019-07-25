@@ -21,7 +21,7 @@ items:
   source:
     id: Sha512HashAlgorithm
     path: ''
-    startLine: 2512
+    startLine: 2524
   assemblies:
   - cs.temp.dll
   namespace: Yort.Otp
@@ -64,7 +64,7 @@ items:
   source:
     id: ComputeHash
     path: ''
-    startLine: 836
+    startLine: 848
   assemblies:
   - cs.temp.dll
   namespace: Yort.Otp
@@ -107,7 +107,7 @@ items:
   source:
     id: Name
     path: ''
-    startLine: 845
+    startLine: 857
   assemblies:
   - cs.temp.dll
   namespace: Yort.Otp
@@ -142,7 +142,7 @@ items:
   source:
     id: ComputeHash
     path: ''
-    startLine: 1210
+    startLine: 1222
   assemblies:
   - cs.temp.dll
   namespace: Yort.Otp
@@ -183,7 +183,7 @@ items:
   source:
     id: Name
     path: ''
-    startLine: 1221
+    startLine: 1233
   assemblies:
   - cs.temp.dll
   namespace: Yort.Otp
@@ -216,7 +216,7 @@ items:
   source:
     id: ComputeHash
     path: ''
-    startLine: 2523
+    startLine: 2535
   assemblies:
   - cs.temp.dll
   namespace: Yort.Otp
@@ -257,7 +257,7 @@ items:
   source:
     id: Name
     path: ''
-    startLine: 2541
+    startLine: 2553
   assemblies:
   - cs.temp.dll
   namespace: Yort.Otp
