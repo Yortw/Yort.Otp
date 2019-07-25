@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<AssemblyName>Yort.Otp</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>C:\Projects\GitHub\Yort.Otp\src\Yort.Otp.NetStandard20\Yort.Otp.NetStandard20.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Projects\GitHub\Yort.Otp\src\Yort.Otp.NetStandard20\Yort.Otp.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <Import Project="..\Yort.Otp.SharedHashAlgorithms\Yort.Otp.SharedHashAlgorithms.projitems" Label="Shared" />
+
+  <Import Project="..\Yort.Otp.SharedImplementation\Yort.Otp.SharedImplementation.projitems" Label="Shared" />
+
+  <Import Project="..\Yort.Otp.Shared\Yort.Otp.Shared.projitems" Label="Shared" />
+
+</Project>
