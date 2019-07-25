@@ -11,7 +11,7 @@
     <iconUrl>https://raw.githubusercontent.com/Yortw/Yort.Otp/master/icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A portable .Net library for onetime password generation.</description>
-    <releaseNotes>Now handles padding when decoding secrets from base32 strings.</releaseNotes>
+    <releaseNotes>Added support for .Net Standard 2.0, dropped support for Windows Phone Silverlight.</releaseNotes>
     <copyright>Copyright 2019</copyright>
     <tags>totp hotp otp onetime password net40 winrt uwp uap ios android netstandard rfc6238 rfc4226</tags>
   </metadata>
